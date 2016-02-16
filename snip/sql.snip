@@ -1,0 +1,13 @@
+snippet	case
+abbr	CASE WHEN ... THEN ... END
+options	word
+	CASE
+	WHEN ${1:condition} THEN ${2:value}
+	ELSE ${3:value}
+	END
+
+snippet table
+abbr	CREATE TABLE
+	CREATE TABLE ${1:name} (
+		${2:hoge text,}
+	);
