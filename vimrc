@@ -1,50 +1,48 @@
 "Author: Eivy
-"Last Change: 16-Feb-2016.
+"Last Change: 04-Feb-2016.
 " vi:tw=0 ts=4 sw=4
 set enc=utf-8
 scriptencoding utf-8
 
-if &compatible
-	set nocompatible
-endif
-if has('vim_starting')
-	set runtimepath^=~/.vim/remote/dein.vim
+if has('vim_starting') && !has('win32') && !has('win32unix')
+	set runtimepath+=~/.vim/remote/neobundle.vim
+	call neobundle#begin('~/.vim/remote')
 endif
 
-call dein#begin('~/.vim/remote')
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-call dein#add('Eivy/savevers.vim')
-call dein#add('Shougo/vimproc')
-call dein#add('haya14busa/vim-migemo')
-call dein#add('itchyny/lightline.vim')
-call dein#add('justinmk/vim-dirvish')
-call dein#add('kana/vim-textobj-user')
-call dein#add('Shougo/neomru.vim')
-call dein#add('Shougo/unite.vim')
-call dein#add('tpope/vim-fugitive')
+NeoBundle 'Eivy/savevers.vim'
+NeoBundle 'Shougo/vimproc', {'build': {'mac': 'make', 'unix': 'make'}}
+NeoBundle 'haya14busa/vim-migemo'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'justinmk/vim-dirvish'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tpope/vim-fugitive'
 
-call dein#add('Eivy/Align', {'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
-call dein#add('Eivy/applescript.vim', {'lazy': 1, 'on_ft': 'applescript'})
-call dein#add('Eivy/commenter.vim', {'lazy': 1, 'on_map': '<Plug>(Commenter-'})
-call dein#add('Rip-Rip/clang_complete', {'lazy': 1, 'on_ft': ['objc','c','cpp']})
-call dein#add('Shougo/neocomplete.vim', {'lazy': 1, 'on_i': 1})
-call dein#add('Shougo/neosnippet', {'lazy': 1, 'on_i': 1, 'on_ft': 'neosnippet'})
-call dein#add('Shougo/neosnippet-snippets', {'lazy': 1, 'on_i': 1})
-call dein#add('bkad/CamelCaseMotion', {'lazy': 1, 'on_map': '<Plug>CamelCaseMotion_'})
-call dein#add('fatih/vim-go', {'lazy': 1, 'on_ft': 'go'})
-call dein#add('majutsushi/tagbar', {'lazy': 1, 'on_cmd': 'TagbarToggle'})
-call dein#add('mattn/emmet-vim', {'lazy': 1, 'on_ft': ['html','xhtml','css','xml','markdown','cs']})
-call dein#add('osyo-manga/unite-quickfix', {'lazy': 1, 'depends': 'unite.vim', 'on_cmd': ['gr', 'gr!', 'vimgrep', 'vimgrep!']})
-call dein#add('t9md/vim-choosewin', {'lazy': 1, 'on_map': '<Plug>(choosewin)'})
-call dein#add('thinca/vim-fontzoom', {'lazy': 1, 'on_cmd': 'Fontzoom'})
-call dein#add('thinca/vim-quickrun', {'lazy': 1, 'on_cmd': 'QuickRun','on_map': '<leader>r'})
-call dein#add('tpope/vim-surround', {'lazy': 1, 'on_map': ['n', 'ds', 'cs', 'ys']})
-call dein#add('tyru/open-browser.vim', {'lazy': 1, 'on_map': '<Plug>(openbrowser-'})
-call dein#add('vim-scripts/diffchar.vim', {'lazy': 1, 'on_map': ['<F7>','<F8>']})
-call dein#add('vim-scripts/vcscommand.vim', {'lazy': 1, 'on_cmd': ['VCSBlame', 'VCSDiff']})
-call dein#add('zhaocai/DirDiff.vim', {'lazy': 1, 'on_cmd': 'DirDiff'})
+NeoBundleLazy 'Eivy/Align', {'on_cmd': ['Align', 'AlignCtrl'],'on_map': '<leader>t'}
+NeoBundleLazy 'Eivy/applescript.vim', {'on_ft': 'applescript'}
+NeoBundleLazy 'Eivy/commenter.vim', {'on_map': '<Plug>(Commenter-'}
+NeoBundleLazy 'Rip-Rip/clang_complete', {'on_ft': ['objc','c','cpp']}
+NeoBundleLazy 'Shougo/neocomplete.vim', {'on_i': 1}
+NeoBundleLazy 'Shougo/neosnippet', {'on_i': 1, 'on_ft': 'neosnippet'}
+NeoBundleLazy 'Shougo/neosnippet-snippets', {'on_i': 1}
+NeoBundleLazy 'bkad/CamelCaseMotion', {'on_map': '<Plug>CamelCaseMotion_'}
+NeoBundleLazy 'fatih/vim-go', {'on_ft': 'go'}
+NeoBundleLazy 'majutsushi/tagbar', {'on_cmd': 'TagbarToggle'}
+NeoBundleLazy 'mattn/emmet-vim', {'on_ft': ['html','xhtml','css','xml','markdown','cs']}
+NeoBundleLazy 'osyo-manga/unite-quickfix', {'on_cmd': ['gr', 'vimgrep']}
+NeoBundleLazy 't9md/vim-choosewin', {'on_map': '<Plug>(choosewin)'}
+NeoBundleLazy 'thinca/vim-fontzoom', {'on_cmd': 'Fontzoom'}
+NeoBundleLazy 'thinca/vim-quickrun', {'on_cmd': 'QuickRun','on_map': '<leader>r'}
+NeoBundleLazy 'tpope/vim-surround', {'on_map': ['n', 'ds', 'cs', 'ys']}
+NeoBundleLazy 'tyru/open-browser.vim', {'on_map': '<Plug>(openbrowser-'}
+NeoBundleLazy 'vim-scripts/diffchar.vim', {'on_map': ['<F7>','<F8>']}
+NeoBundleLazy 'vim-scripts/vcscommand.vim', {'on_cmd': ['VCSBlame', 'VCSDiff']}
+NeoBundleLazy 'zhaocai/DirDiff.vim', {'on_cmd': 'DirDiff'}
 
-call dein#end()
+call neobundle#end()
 
 filetype plugin indent on
 
@@ -54,7 +52,7 @@ if has('autocmd') && has('syntax')
 	endf
 	aug Eivy
 		au!
-		au FileType help set nonu nornu
+		au FileType help setlocal nonu nornu
 		au FileType quickrun set nowrap
 		au FileType * set fo-=c fo-=r fo-=o
 		au BufRead,WinEnter,VimEnter * match ZenkakuSpace /　/
