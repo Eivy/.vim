@@ -273,4 +273,4 @@ let g:indent_guides_guide_size=1
 let g:indent_guides_start_level=2
 let g:indent_guides_exclude_filetypes=['help', 'quickrun', 'tagbar']
 let g:indent_guides_color_change_percent=8
-nnoremap <silent> gt :TagbarToggle<CR>
+nnoremap <silent> <leader>gt :TagbarToggle<CR>
