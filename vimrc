@@ -219,6 +219,7 @@ if !exists('g:neocomplete#souces#omni#imput_patterns')
 	let g:neocomplete#souces#omni#imput_patterns = {}
 endif
 let g:neocomplete#souces#omni#imput_patterns.cs = '.*[^=\);]'
+let g:neocomplete#souces#omni#imput_patterns.go = '\h\w\.\w*'
 
 "NeoSnippet
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
@@ -274,3 +275,8 @@ let g:indent_guides_start_level=2
 let g:indent_guides_exclude_filetypes=['help', 'quickrun', 'tagbar']
 let g:indent_guides_color_change_percent=8
 nnoremap <silent> <leader>gt :TagbarToggle<CR>
+
+"vim-go
+let g:go_highlight_functions=1
+let g:go_highlight_methods=1
+let g:go_highlight_structs=1
