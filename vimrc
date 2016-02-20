@@ -14,13 +14,13 @@ endif
 call dein#begin('~/.vim/remote')
 
 call dein#add('Eivy/savevers.vim')
+call dein#add('Shougo/neomru.vim')
+call dein#add('Shougo/unite.vim')
+call dein#add('Shougo/vimfiler', {'depends':'unite.vim'})
 call dein#add('Shougo/vimproc')
 call dein#add('haya14busa/vim-migemo')
 call dein#add('itchyny/lightline.vim')
-call dein#add('justinmk/vim-dirvish')
 call dein#add('kana/vim-textobj-user')
-call dein#add('Shougo/neomru.vim')
-call dein#add('Shougo/unite.vim')
 call dein#add('tpope/vim-fugitive')
 
 call dein#add('Eivy/Align', {'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
@@ -282,3 +282,6 @@ nnoremap <silent> <leader>gt :TagbarToggle<CR>
 let g:go_highlight_functions=1
 let g:go_highlight_methods=1
 let g:go_highlight_structs=1
+
+"vimfiler
+let g:vimfiler_as_default_explorer=1
