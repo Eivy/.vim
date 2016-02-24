@@ -14,27 +14,27 @@ endif
 call dein#begin('~/.vim/remote')
 
 call dein#add('Eivy/savevers.vim')
+call dein#add('haya14busa/vim-migemo')
+call dein#add('itchyny/lightline.vim')
+call dein#add('kana/vim-textobj-user')
+call dein#add('osyo-manga/unite-quickfix', {'depends': 'unite.vim'})
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/vimfiler', {'depends':'unite.vim'})
 call dein#add('Shougo/vimproc')
-call dein#add('haya14busa/vim-migemo')
-call dein#add('itchyny/lightline.vim')
-call dein#add('kana/vim-textobj-user')
 call dein#add('tpope/vim-fugitive')
 
+call dein#add('bkad/CamelCaseMotion', {'lazy': 1, 'on_map': '<Plug>CamelCaseMotion_'})
 call dein#add('Eivy/Align', {'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
 call dein#add('Eivy/applescript.vim', {'lazy': 1, 'on_ft': 'applescript'})
 call dein#add('Eivy/commenter.vim', {'lazy': 1, 'on_map': '<Plug>(Commenter-'})
+call dein#add('fatih/vim-go', {'lazy': 1, 'on_ft': 'go'})
+call dein#add('majutsushi/tagbar', {'lazy': 1, 'on_cmd': 'TagbarToggle'})
+call dein#add('mattn/emmet-vim', {'lazy': 1, 'on_ft': ['html','xhtml','css','xml','markdown','cs']})
 call dein#add('Rip-Rip/clang_complete', {'lazy': 1, 'on_ft': ['objc','c','cpp']})
 call dein#add('Shougo/neocomplete.vim', {'lazy': 1, 'on_i': 1})
 call dein#add('Shougo/neosnippet', {'lazy': 1, 'on_i': 1, 'on_ft': 'neosnippet'})
 call dein#add('Shougo/neosnippet-snippets', {'lazy': 1, 'on_i': 1})
-call dein#add('bkad/CamelCaseMotion', {'lazy': 1, 'on_map': '<Plug>CamelCaseMotion_'})
-call dein#add('fatih/vim-go', {'lazy': 1, 'on_ft': 'go'})
-call dein#add('majutsushi/tagbar', {'lazy': 1, 'on_cmd': 'TagbarToggle'})
-call dein#add('mattn/emmet-vim', {'lazy': 1, 'on_ft': ['html','xhtml','css','xml','markdown','cs']})
-call dein#add('osyo-manga/unite-quickfix', {'lazy': 1, 'depends': 'unite.vim', 'on_cmd': ['gr', 'gr!', 'vimgrep', 'vimgrep!']})
 call dein#add('t9md/vim-choosewin', {'lazy': 1, 'on_map': '<Plug>(choosewin)'})
 call dein#add('thinca/vim-fontzoom', {'lazy': 1, 'on_cmd': 'Fontzoom'})
 call dein#add('thinca/vim-quickrun', {'lazy': 1, 'on_cmd': 'QuickRun','on_map': '<leader>r'})
@@ -63,7 +63,7 @@ if has('autocmd') && has('syntax')
 		au BufReadPost,WinEnter,VimEnter * if &ft !~ 'fugitiveblame\|tagbar\|help' | set rnu nu | endif
 		au ColorScheme * call <SID>ZenkakuSpace()
 		au InsertEnter,InsertLeave * set imi=0 ims=0
-		au QuickFixCmdPost vimgrep,grep NeoBundleSource unite-quickfix | Unite quickfix
+		au QuickFixCmdPost vimgrep,grep Unite quickfix
 		if exists("+omnifunc")
 			au Filetype * if &ofu == "" | setlocal ofu=syntaxcomplete#Complete | endif
 		endif
@@ -285,3 +285,4 @@ let g:go_highlight_structs=1
 
 "vimfiler
 let g:vimfiler_as_default_explorer=1
+call vimfiler#custom#profile('default', 'context', {'safe': 0})
