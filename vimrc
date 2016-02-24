@@ -285,4 +285,4 @@ let g:go_highlight_structs=1
 
 "vimfiler
 let g:vimfiler_as_default_explorer=1
-call vimfiler#custom#profile('default', 'context', {'safe': 0})
+call vimfiler#custom#profile('default', 'context', {'safe': 0, 'simple': 1})
