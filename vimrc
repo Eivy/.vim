@@ -1,5 +1,5 @@
 "Author: Eivy
-"Last Change: 16-Feb-2016.
+"Last Change: 01-Jun-2016.
 " vi:tw=0 ts=4 sw=4
 set enc=utf-8
 scriptencoding utf-8
@@ -7,42 +7,47 @@ scriptencoding utf-8
 if &compatible
 	set nocompatible
 endif
-if has('vim_starting')
+if has('vim_starting') && !has('win32') && !has('win32unix')
 	set runtimepath^=~/.vim/remote/dein.vim
+	call dein#begin('~/.vim/remote')
 endif
 
-call dein#begin('~/.vim/remote')
-
 call dein#add('Eivy/savevers.vim')
-call dein#add('haya14busa/vim-migemo')
-call dein#add('itchyny/lightline.vim')
-call dein#add('kana/vim-textobj-user')
-call dein#add('osyo-manga/unite-quickfix', {'depends': 'unite.vim'})
+call dein#add('Eivy/vim-gotham', {'script_type': 'colors'})
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/unite.vim')
-call dein#add('Shougo/vimfiler', {'depends':'unite.vim'})
-call dein#add('Shougo/vimproc')
+call dein#add('Shougo/vimfiler')
+call dein#add('Shougo/vimproc', {'build': 'make'})
+call dein#add('haya14busa/vim-migemo')
+call dein#add('itchyny/lightline.vim')
+call dein#add('osyo-manga/unite-quickfix', {'depends': 'unite.vim'})
+call dein#add('scrooloose/syntastic')
 call dein#add('tpope/vim-fugitive')
 
-call dein#add('bkad/CamelCaseMotion', {'lazy': 1, 'on_map': '<Plug>CamelCaseMotion_'})
-call dein#add('Eivy/Align', {'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
-call dein#add('Eivy/applescript.vim', {'lazy': 1, 'on_ft': 'applescript'})
-call dein#add('Eivy/commenter.vim', {'lazy': 1, 'on_map': '<Plug>(Commenter-'})
-call dein#add('fatih/vim-go', {'lazy': 1, 'on_ft': 'go'})
-call dein#add('majutsushi/tagbar', {'lazy': 1, 'on_cmd': 'TagbarToggle'})
-call dein#add('mattn/emmet-vim', {'lazy': 1, 'on_ft': ['html','xhtml','css','xml','markdown','cs']})
-call dein#add('Rip-Rip/clang_complete', {'lazy': 1, 'on_ft': ['objc','c','cpp']})
-call dein#add('Shougo/neocomplete.vim', {'lazy': 1, 'on_i': 1})
-call dein#add('Shougo/neosnippet', {'lazy': 1, 'on_i': 1, 'on_ft': 'neosnippet'})
-call dein#add('Shougo/neosnippet-snippets', {'lazy': 1, 'on_i': 1})
-call dein#add('t9md/vim-choosewin', {'lazy': 1, 'on_map': '<Plug>(choosewin)'})
-call dein#add('thinca/vim-fontzoom', {'lazy': 1, 'on_cmd': 'Fontzoom'})
-call dein#add('thinca/vim-quickrun', {'lazy': 1, 'on_cmd': 'QuickRun','on_map': '<leader>r'})
-call dein#add('tpope/vim-surround', {'lazy': 1, 'on_map': ['n', 'ds', 'cs', 'ys']})
-call dein#add('tyru/open-browser.vim', {'lazy': 1, 'on_map': '<Plug>(openbrowser-'})
-call dein#add('vim-scripts/diffchar.vim', {'lazy': 1, 'on_map': ['<F7>','<F8>']})
-call dein#add('vim-scripts/vcscommand.vim', {'lazy': 1, 'on_cmd': ['VCSBlame', 'VCSDiff']})
-call dein#add('zhaocai/DirDiff.vim', {'lazy': 1, 'on_cmd': 'DirDiff'})
+call dein#add('Eivy/Align',                {'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
+call dein#add('Eivy/applescript.vim',      {'lazy': 1, 'on_ft' : 'applescript'})
+call dein#add('Eivy/commenter.vim',        {'lazy': 1, 'on_map': '<Plug>(Commenter-'})
+call dein#add('Rip-Rip/clang_complete',    {'lazy': 1, 'on_ft' : ['objc','c','cpp']})
+call dein#add('Shougo/neocomplete.vim',    {'lazy': 1, 'on_i'  : 1})
+call dein#add('Shougo/neosnippet',         {'lazy': 1, 'on_i'  : 1, 'on_ft': 'neosnippet'})
+call dein#add('Shougo/neosnippet-snippets',{'lazy': 1, 'on_i'  : 1})
+call dein#add('bkad/CamelCaseMotion',      {'lazy': 1, 'on_map': '<Plug>CamelCaseMotion_'})
+call dein#add('fatih/vim-go',              {'lazy': 1, 'on_ft' : 'go'})
+call dein#add('kana/vim-operator-user',    {'lazy': 1})
+call dein#add('kana/vim-textobj-function', {'lazy': 1, 'on_ft' : ['vb','vbnet'], 'depends': 'vim-textobj-user'})
+call dein#add('kana/vim-textobj-user',     {'lazy': 1})
+call dein#add('lambdalisue/vim-gista',     {'lazy': 1, 'on_cmd': 'Gista', 'on_map': '<Plug>(gista-', 'depends': 'unite.vim'})
+call dein#add('majutsushi/tagbar',         {'lazy': 1, 'on_cmd': 'TagbarToggle'})
+call dein#add('mattn/emmet-vim',           {'lazy': 1, 'on_ft' : ['html','xhtml','css','xml','markdown','cs','eruby']})
+call dein#add('t9md/vim-choosewin',        {'lazy': 1, 'on_map': '<Plug>(choosewin)'})
+call dein#add('thinca/vim-fontzoom',       {'lazy': 1, 'on_cmd': 'Fontzoom'})
+call dein#add('thinca/vim-quickrun',       {'lazy': 1, 'on_cmd': 'QuickRun','on_map': '<leader>r'})
+call dein#add('tpope/vim-surround',        {'lazy': 1, 'on_map': ['n', 'ds', 'cs', 'ys']})
+call dein#add('tyru/caw.vim',              {'lazy': 1, 'on_map': '<Plug>(caw:', 'depends': 'vim-operator-user'})
+call dein#add('tyru/open-browser.vim',     {'lazy': 1, 'on_map': '<Plug>(openbrowser-'})
+call dein#add('vim-scripts/diffchar.vim',  {'lazy': 1, 'on_map': ['<F7>','<F8>']})
+call dein#add('vim-scripts/vcscommand.vim',{'lazy': 1, 'on_cmd': ['VCSBlame', 'VCSDiff']})
+call dein#add('zhaocai/DirDiff.vim',       {'lazy': 1, 'on_cmd': 'DirDiff'})
 
 call dein#end()
 
@@ -54,13 +59,12 @@ if has('autocmd') && has('syntax')
 	endf
 	aug Eivy
 		au!
-		au FileType help set nonu nornu
+		au FileType help,vimfiler,tagbar set nonu
 		au FileType quickrun set nowrap
 		au FileType * set fo-=c fo-=r fo-=o
 		au BufRead,WinEnter,VimEnter * match ZenkakuSpace /　/
-		au BufLeave * set nornu
 		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exec "normal! g'\"" | endif
-		au BufReadPost,WinEnter,VimEnter * if &ft !~ 'fugitiveblame\|tagbar\|help' | set rnu nu | endif
+		au BufReadPost,WinEnter,VimEnter * if &ft !~ 'fugitiveblame\|tagbar\|vimfiler\|help' | set nu | endif
 		au ColorScheme * call <SID>ZenkakuSpace()
 		au InsertEnter,InsertLeave * set imi=0 ims=0
 		au QuickFixCmdPost vimgrep,grep Unite quickfix
@@ -75,16 +79,17 @@ endif
 set t_Co=256
 set bk bdir=~/.clean pm=+ noswf nocul noudf
 set dy=lastline fo=BqljmM go=C hi=50 ls=2 hls
-set nu rnu ic scs sm sw=4 ts=4 nf=hex sc ch=1
+set nu ic scs sm sw=4 ts=4 nf=hex sc ch=1
 set wmnu wim=longest:full,full is nows wrap
 set list lcs=trail:«,tab:»\ ,extends:>,precedes:>
 set grepprg=ag\ --nogroup\ --nocolor
 set dip=filler,vertical
 set ambiwidth=single
 set ai backspace=indent,eol,start
-set fencs=utf-8,ucs-bom,cp932,utf-16le,utf-16be,default
+set fencs=utf-8,euc-jp,ucs-bom,cp932,utf-16le,utf-16be,default
 set iskeyword=_,-,a-z,A-Z,48-57,128-167,224-235
 set vi='100,<50,s10,h,n~/.vim/info
+set synmaxcol=200
 colo eivy
 syntax enable
 
@@ -134,6 +139,14 @@ xmap <silent> <leader>e <Plug>CamelCaseMotion_e
 omap <silent> <leader>e <Plug>CamelCaseMotion_e
 omap <silent> i<leader>e <Plug>CamelCaseMotion_ie
 
+"caw.vim
+nmap <silent> <leader>g <Plug>(caw:hatpos:toggle:operator)
+nmap <silent> <leader>gg <Plug>(caw:hatpos:toggle)
+vmap <silent> <leader>g <Plug>(caw:hatpos:toggle)
+nmap <silent> <leader>w <Plug>(caw:wrap:toggle:operator)
+nmap <silent> <leader>ww <Plug>(caw:wrap:toggle)
+vmap <silent> <leader>w <Plug>(caw:wrap:toggle)
+
 "clang_complete
 let g:clang_complete_auto=0
 let g:clang_auto_select=2
@@ -148,13 +161,11 @@ let g:choosewin_overlay_clear_multibyte=1
 let g:choosewin_color_overlay={'gui': ['#000dcc'], 'cterm': ['darkcyan']}
 let g:choosewin_color_overlay_current={'gui': ['#0033ff'], 'cterm': ['cyan']}
 
-"Commenter
-nmap <leader>gg <Plug>(Commenter-toggle)
-xmap <leader>g <Plug>(Commenter-toggle)
-nmap <leader>g <Plug>(Commenter-toggle-with-motion)
-
 "Emmet
 let g:user_emmet_leader_key='<C-g>'
+
+"Gista
+let g:gista#client#user_git_config_github_username=1
 
 "LigntLine
 let g:lightline = {
@@ -221,7 +232,7 @@ if !exists('g:neocomplete#souces#omni#imput_patterns')
 	let g:neocomplete#souces#omni#imput_patterns = {}
 endif
 let g:neocomplete#souces#omni#imput_patterns.cs = '.*[^=\);]'
-let g:neocomplete#souces#omni#imput_patterns.go = '\h\w\.\w*'
+let g:neocomplete#souces#omni#imput_patterns.go = '\h\w\+\.\w*'
 
 "NeoSnippet
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
@@ -261,13 +272,17 @@ nnoremap <silent> gdp :VersDiff -<CR>
 nnoremap <silent> gdn :VersDiff +<CR>
 nnoremap <silent> gde :VersDiff -c<CR>
 
+"Syntastic
+let g:syntastic_check_on_wq = 0
+
+
 "Unite.vim
 call unite#custom#profile('default', 'context', {'direction': 'belowright', 'winheight':10, 'auto-resize': 1, 'start_insert': 1})
 call unite#custom#source('neomru/file', 'ignore_pattern', '+$\|.git/\|.svn/\|\%(^\%(fugitive\)://\)')
-call unite#custom#default_action('file', 'above')
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nnoremap <silent> gm :Unite neomru/file<CR>
-nnoremap <silent> gb :Unite buffer<CR>
+nnoremap <silent> gum :Unite neomru/file<CR>
+nnoremap <silent> gub :Unite buffer<CR>
+nnoremap <silent> guv :VimFilerExplorer<CR>
 nnoremap <silent> <C-p> :Unite file_rec/async<CR>
 
 "vim-indent-guides
