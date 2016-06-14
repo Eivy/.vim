@@ -60,8 +60,12 @@ if has('autocmd') && has('syntax')
 	aug Eivy
 		au!
 		au FileType help,vimfiler,tagbar set nonu
-		au FileType quickrun set nowrap
+		au FileType quickrun setl nowrap
 		au FileType * set fo-=c fo-=r fo-=o
+		au FileType go nmap <leader>d <Plug>(go-def-split)
+		au FileType go nmap <leader>do <Plug>(go-doc)
+		au FileType go nmap <leader>i <Plug>(go-implements)
+		au FileType go nmap <leader>re <Plug>(go-rename)
 		au BufRead,WinEnter,VimEnter * match ZenkakuSpace /　/
 		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exec "normal! g'\"" | endif
 		au BufReadPost,WinEnter,VimEnter * if &ft !~ 'fugitiveblame\|tagbar\|vimfiler\|help' | set nu | endif
@@ -274,7 +278,8 @@ nnoremap <silent> gde :VersDiff -c<CR>
 
 "Syntastic
 let g:syntastic_check_on_wq = 0
-
+let g:syntstic_go_checkers=['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map={'map': 'active', 'passive_filetypes': ['go']}
 
 "Unite.vim
 call unite#custom#profile('default', 'context', {'direction': 'belowright', 'winheight':10, 'auto-resize': 1, 'start_insert': 1})
@@ -297,6 +302,7 @@ nnoremap <silent> <leader>gt :TagbarToggle<CR>
 let g:go_highlight_functions=1
 let g:go_highlight_methods=1
 let g:go_highlight_structs=1
+let g:go_fmt_command='goimports'
 
 "vimfiler
 let g:vimfiler_as_default_explorer=1
