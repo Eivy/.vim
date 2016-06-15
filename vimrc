@@ -59,7 +59,7 @@ if has('autocmd') && has('syntax')
 	endf
 	aug Eivy
 		au!
-		au FileType help,vimfiler,tagbar set nonu
+		au FileType help,vimfiler,tagbar setl nonu
 		au FileType quickrun setl nowrap
 		au FileType * set fo-=c fo-=r fo-=o
 		au FileType go nmap <leader>d <Plug>(go-def-split)
@@ -280,6 +280,35 @@ nnoremap <silent> gde :VersDiff -c<CR>
 let g:syntastic_check_on_wq = 0
 let g:syntstic_go_checkers=['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map={'map': 'active', 'passive_filetypes': ['go']}
+
+"TagBar
+let g:tagbar_type_go = {
+	\'ctagstype' : 'go',
+	\'kinds'     : [
+	\	'p:package',
+	\	'i:imports:1',
+	\	'c:constants',
+	\	'v:variables',
+	\	't:types',
+	\	'n:interfaces',
+	\	'w:fields',
+	\	'e:embedded',
+	\	'm:methods',
+	\	'r:constructor',
+	\	'f:functions'
+	\],
+	\'sro' : '.',
+	\'kind2scope' : {
+	\	't' : 'ctype',
+	\	'n' : 'ntype'
+	\},
+	\'scope2kind' : {
+	\	'ctype' : 't',
+	\	'ntype' : 'n'
+	\},
+	\'ctagsbin'  : 'gotags',
+	\'ctagsargs' : '-sort -silent'
+	\}
 
 "Unite.vim
 call unite#custom#profile('default', 'context', {'direction': 'belowright', 'winheight':10, 'auto-resize': 1, 'start_insert': 1})
