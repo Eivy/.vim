@@ -1,5 +1,4 @@
 "Author: Eivy
-"Last Change: 01-Jun-2016.
 " vi:tw=0 ts=4 sw=4
 set enc=utf-8
 scriptencoding utf-8
