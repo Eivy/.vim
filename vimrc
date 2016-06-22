@@ -54,7 +54,7 @@ filetype plugin indent on
 
 if has('autocmd') && has('syntax')
 	fun! <SID>ZenkakuSpace()
-		hi ZenkakuSpace cterm=underline ctermfg=yellow gui=underline guifg=#FFFF00
+		hi ZenkakuSpace cterm=underline ctermfg=gray gui=underline guifg=#AAAAAA
 	endf
 	aug Eivy
 		au!
