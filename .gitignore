@@ -1,4 +1,8 @@
-remote/
+remote/.dein/
+remote/repos/
+remote/rollbacks/
+remote/temp/
+remote/merged
 view/
 info
 .netrwhist
