@@ -94,6 +94,8 @@ set fencs=utf-8,euc-jp,ucs-bom,cp932,utf-16le,utf-16be,default
 set iskeyword=_,-,a-z,A-Z,48-57,128-167,224-235
 set vi='100,<50,s10,h,n~/.vim/info
 set synmaxcol=200
+set visualbell t_vb=
+set noerrorbells
 colo eivy
 syntax enable
 
