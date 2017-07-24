@@ -9,6 +9,7 @@ endif
 set runtimepath^=~/.vim/remote/dein.vim
 
 if dein#load_state('~/.vim/remote')
+	call dein#local('~/.vim/local')
 	call dein#begin('~/.vim/remote')
 	call dein#add('Eivy/savevers.vim')
 	call dein#add('Eivy/vim-gotham', {'script_type': 'colors'})
