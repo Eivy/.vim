@@ -1,8 +1,5 @@
-remote/.dein/
-remote/repos/
-remote/rollbacks/
-remote/temp/
-remote/merged
-view/
 info
-.netrwhist
+remote/.cache
+remote/cache_vim
+remote/repos
+remote/state_vim.vim
