@@ -8,7 +8,7 @@ if &compatible
 endif
 
 let vimpath=''
-if has('win32')
+if has('win32') || has('win32unix')
 	let vimpath = '~/vimfiles/'
 else
 	let vimpath = '~/.vim/'
