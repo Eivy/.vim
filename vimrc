@@ -6,11 +6,20 @@ scriptencoding utf-8
 if &compatible
 	set nocompatible
 endif
-set runtimepath^=~/.vim/remote/dein.vim
 
-if dein#load_state('~/.vim/remote')
-	call dein#local('~/.vim/local')
-	call dein#begin('~/.vim/remote')
+let vimpath=''
+if has('win32')
+	let vimpath = '~/vimfiles/'
+else
+	let vimpath = '~/.vim/'
+endif
+
+exe 'set runtimepath^='.vimpath.'remote/dein.vim'
+
+if dein#load_state(vimpath.'remote')
+	call dein#local(vimpath.'local')
+	call dein#begin(vimpath.'remote')
+
 	call dein#add('Eivy/savevers.vim')
 	call dein#add('Eivy/vim-gotham', {'script_type': 'colors'})
 	call dein#add('Shougo/neomru.vim')
@@ -22,11 +31,18 @@ if dein#load_state('~/.vim/remote')
 	call dein#add('osyo-manga/unite-quickfix', {'depends': 'unite.vim'})
 	call dein#add('scrooloose/syntastic')
 	call dein#add('tpope/vim-fugitive')
+	call dein#add('editorconfig/editorconfig-vim')
+
+	if has('mac')
+		call dein#add('Rip-Rip/clang_complete',		{'lazy': 1, 'on_ft' : ['objc','c','cpp']})
+	endif
+	if has('gui')
+		call dein#add('thinca/vim-fontzoom',		{'lazy': 1, 'on_cmd': 'Fontzoom'})
+	endif
 
 	call dein#add('Eivy/Align',					{'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
 	call dein#add('Eivy/applescript.vim',		{'lazy': 1, 'on_ft' : 'applescript'})
 	call dein#add('Eivy/commenter.vim',			{'lazy': 1, 'on_map': '<Plug>(Commenter-'})
-	call dein#add('Rip-Rip/clang_complete',		{'lazy': 1, 'on_ft' : ['objc','c','cpp']})
 	call dein#add('Shougo/neocomplete.vim',		{'lazy': 1, 'on_i'  : 1})
 	call dein#add('Shougo/neosnippet',			{'lazy': 1, 'on_i'  : 1, 'on_ft': 'neosnippet'})
 	call dein#add('Shougo/neosnippet-snippets',	{'lazy': 1, 'on_i'  : 1})
@@ -39,9 +55,7 @@ if dein#load_state('~/.vim/remote')
 	call dein#add('majutsushi/tagbar',			{'lazy': 1, 'on_cmd': 'TagbarToggle'})
 	call dein#add('mattn/emmet-vim',			{'lazy': 1, 'on_ft' : ['html','xhtml','css','xml','markdown','cs','eruby']})
 	call dein#add('rhysd/vim-gfm-syntax',		{'lazy': 1, 'on_ft': 'markdown'})
-	call dein#add('rhysd/vim-gfm-syntax',		{'lazy': 1, 'on_ft': 'markdown'})
 	call dein#add('t9md/vim-choosewin',			{'lazy': 1, 'on_map': '<Plug>(choosewin)'})
-	call dein#add('thinca/vim-fontzoom',		{'lazy': 1, 'on_cmd': 'Fontzoom'})
 	call dein#add('thinca/vim-quickrun',		{'lazy': 1, 'on_cmd': 'QuickRun','on_map': '<leader>r'})
 	call dein#add('tpope/vim-surround',			{'lazy': 1, 'on_map': ['n', 'ds', 'cs', 'ys']})
 	call dein#add('tyru/caw.vim',				{'lazy': 1, 'on_map': '<Plug>(caw:', 'depends': 'vim-operator-user'})
@@ -95,7 +109,8 @@ set ambiwidth=single
 set ai backspace=indent,eol,start
 set fencs=utf-8,euc-jp,ucs-bom,cp932,utf-16le,utf-16be,default
 set iskeyword=_,-,a-z,A-Z,48-57,128-167,224-235
-set vi='100,<50,s10,h,n~/.vim/info
+set vi='100,<50,s10,h
+exe 'set vi+=n'.vimpath.'info'
 set synmaxcol=200
 set visualbell t_vb=
 set noerrorbells
