@@ -36,17 +36,21 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('Eivy/Align',					{'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
 	call dein#add('Eivy/applescript.vim',		{'lazy': 1, 'on_ft' : 'applescript'})
 	call dein#add('Eivy/commenter.vim',			{'lazy': 1, 'on_map': '<Plug>(Commenter-'})
+	call dein#add('Eivy/vim-metarw-simplenote',	{'lazy': 1, 'on_path': 'sn:', 'depends': ['vim-metarw', 'webapi-vim']})
 	call dein#add('Shougo/neocomplete.vim',		{'lazy': 1, 'on_i'  : 1})
 	call dein#add('Shougo/neosnippet',			{'lazy': 1, 'on_i'  : 1, 'on_ft': 'neosnippet'})
 	call dein#add('Shougo/neosnippet-snippets',	{'lazy': 1, 'on_i'  : 1})
 	call dein#add('bkad/CamelCaseMotion',		{'lazy': 1, 'on_map': '<Plug>CamelCaseMotion_'})
+	call dein#add('emonkak/vim-metarw-gist',	{'lazy': 1, 'on_path': 'gist:', 'depends': ['vim-metarw', 'webapi-vim']})
 	call dein#add('fatih/vim-go',				{'lazy': 1, 'on_ft' : 'go'})
+	call dein#add('kana/vim-metarw',			{'lazy': 1})
 	call dein#add('kana/vim-operator-user',		{'lazy': 1})
 	call dein#add('kana/vim-textobj-function',	{'lazy': 1, 'on_ft' : ['vb','vbnet'], 'depends': 'vim-textobj-user'})
 	call dein#add('kana/vim-textobj-user',		{'lazy': 1})
 	call dein#add('lambdalisue/vim-gista',		{'lazy': 1, 'on_cmd': 'Gista', 'on_map': '<Plug>(gista-', 'depends': 'unite.vim'})
 	call dein#add('majutsushi/tagbar',			{'lazy': 1, 'on_cmd': 'TagbarToggle'})
 	call dein#add('mattn/emmet-vim',			{'lazy': 1, 'on_ft' : ['html','xhtml','css','xml','markdown','cs','eruby']})
+	call dein#add('mattn/webapi-vim',			{'lazy': 1})
 	call dein#add('rhysd/vim-gfm-syntax',		{'lazy': 1, 'on_ft': 'markdown'})
 	call dein#add('t9md/vim-choosewin',			{'lazy': 1, 'on_map': '<Plug>(choosewin)'})
 	call dein#add('thinca/vim-quickrun',		{'lazy': 1, 'on_cmd': 'QuickRun','on_map': '<leader>r'})
@@ -69,6 +73,8 @@ if dein#load_state(vimpath.'remote')
 endif
 
 filetype plugin indent on
+
+source ~/.config/valiables.vim
 
 if has('autocmd') && has('syntax')
 	fun! <SID>ZenkakuSpace()
