@@ -33,13 +33,6 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('tpope/vim-fugitive')
 	call dein#add('editorconfig/editorconfig-vim')
 
-	if has('mac')
-		call dein#add('Rip-Rip/clang_complete',		{'lazy': 1, 'on_ft' : ['objc','c','cpp']})
-	endif
-	if has('gui')
-		call dein#add('thinca/vim-fontzoom',		{'lazy': 1, 'on_cmd': 'Fontzoom'})
-	endif
-
 	call dein#add('Eivy/Align',					{'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
 	call dein#add('Eivy/applescript.vim',		{'lazy': 1, 'on_ft' : 'applescript'})
 	call dein#add('Eivy/commenter.vim',			{'lazy': 1, 'on_map': '<Plug>(Commenter-'})
@@ -63,6 +56,13 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('vim-scripts/diffchar.vim',	{'lazy': 1, 'on_map': ['<F7>','<F8>']})
 	call dein#add('vim-scripts/vcscommand.vim',	{'lazy': 1, 'on_cmd': ['VCSBlame', 'VCSDiff']})
 	call dein#add('zhaocai/DirDiff.vim',		{'lazy': 1, 'on_cmd': 'DirDiff'})
+
+	if has('mac')
+		call dein#add('Rip-Rip/clang_complete',		{'lazy': 1, 'on_ft' : ['objc','c','cpp']})
+	endif
+	if has('gui')
+		call dein#add('thinca/vim-fontzoom',		{'lazy': 1, 'on_cmd': 'Fontzoom'})
+	endif
 
 	call dein#end()
 	call dein#save_state()
