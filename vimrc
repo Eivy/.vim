@@ -36,6 +36,7 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('osyo-manga/unite-quickfix', {'depends': 'unite.vim'})
 	call dein#add('scrooloose/syntastic')
 	call dein#add('tpope/vim-fugitive')
+	call dein#add('editorconfig/editorconfig-vim')
 
 	call dein#add('Eivy/Align',					{'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
 	call dein#add('Eivy/applescript.vim',		{'lazy': 1, 'on_ft' : 'applescript'})
