@@ -1,5 +1,5 @@
 "      Author: Eivy
-" Last Change: 12-Sep-2017.
+" Last Change: 21-Sep-2017.
 scriptencoding=utf-8
 
 "---------------------------------------------------------------------------
@@ -56,3 +56,4 @@ nnoremap	<C-S-tab>	gT
 "Fontzoom
 let g:fontzoom_no_default_key_mappings=1
 colo eivy
+set lines=200 co=300
