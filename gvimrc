@@ -8,6 +8,9 @@ if has('mac')
 	"フォント
 	set gfn=Migu\ 1M\ Regular:h12
 	set ambiwidth=double
+elseif has('win32')
+	set gfn=Migu_1M:h9
+	set ambiwidth=double
 elseif has('xfontset')
 	" UNIX用 (xfontsetを使用)
 	set guifontset=a14,r14,k14
@@ -56,4 +59,4 @@ nnoremap	<C-S-tab>	gT
 "Fontzoom
 let g:fontzoom_no_default_key_mappings=1
 colo eivy
-set lines=200 co=300
+set lines=200 co=400
