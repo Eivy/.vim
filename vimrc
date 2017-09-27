@@ -104,7 +104,7 @@ endif
 
 "option
 set t_Co=256
-set bk bdir=~/.clean pm=+ noswf nocul noudf
+set bk bdir=~/.cache/vim pm=+ noswf nocul noudf
 set dy=lastline fo=BqljmM go=C hi=50 ls=2 hls
 set nu ic scs sm sw=4 ts=4 nf=hex sc ch=1
 set wmnu wim=longest:full,full is nows wrap
