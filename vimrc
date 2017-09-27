@@ -26,7 +26,6 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('Shougo/neomru.vim')
 	call dein#add('Shougo/unite.vim')
 	call dein#add('Shougo/vimfiler')
-	call dein#add('Shougo/vimproc', {'build': 'make'})
 	call dein#add('editorconfig/editorconfig-vim')
 	call dein#add('emonkak/vim-metarw-gist')
 	call dein#add('haya14busa/vim-migemo')
@@ -66,6 +65,9 @@ if dein#load_state(vimpath.'remote')
 	endif
 	if has('gui')
 		call dein#add('thinca/vim-fontzoom',		{'lazy': 1, 'on_cmd': 'Fontzoom'})
+	endif
+	if !has('kaoriya')
+		call dein#add('Shougo/vimproc', {'build': 'make'})
 	endif
 
 	call dein#end()
