@@ -20,7 +20,7 @@ let s:red = [ '#e5786d', 203 ]
 let s:blue = [ '#8ac6f2', 117 ]
 let s:green = [ '#95e454', 119 ]
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:base02, s:blue ], [ s:base02, s:red ], [ s:base3, s:base03 ] ]
+let s:p.normal.left = [ [ s:base02, s:blue ], [ s:base3, s:base03 ] ]
 let s:p.normal.middle = [ [ s:base2, s:base02 ] ]
 let s:p.normal.right = [ [ s:base02, s:base0 ], [ s:base1, s:base01 ] ]
 let s:p.inactive.left =  [ [ s:base02, s:red ], [ s:base0, s:base02 ] ]
@@ -35,5 +35,6 @@ let s:p.tabline.middle = [ [ s:base02, s:base1 ] ]
 let s:p.tabline.right = [ [ s:base2, s:base01 ] ]
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base023, s:yellow ] ]
+let s:p.normal.readonly = [ [ s:base02, s:red ] ]
 
 let g:lightline#colorscheme#eivy#palette = lightline#colorscheme#flatten(s:p)

@@ -33,6 +33,7 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('kana/vim-metarw',)
 	call dein#add('mattn/webapi-vim')
 	call dein#add('osyo-manga/unite-quickfix', {'depends': 'unite.vim'})
+	call dein#add('ryanoasis/vim-devicons')
 	call dein#add('scrooloose/syntastic')
 	call dein#add('tpope/vim-fugitive')
 
@@ -203,7 +204,7 @@ let g:gista#client#user_git_config_github_username=1
 let g:lightline = {
 	\'colorscheme': 'eivy',
 	\'active': {
-	\	'left': [['mode'], ['ro'], ['git'], ['path']],
+	\	'left': [['mode', 'ro'], ['git'], ['path']],
 	\	'right': [['line', 'co'], ['type', 'enc', 'ff']]
 	\},
 	\'inactive': {
@@ -217,18 +218,40 @@ let g:lightline = {
 	\	'line': '%4l:%4L',
 	\	'mode': '%{lightline#mode()}',
 	\	'path': '%f %M',
-	\	'ro': '%R',
 	\	'type': '%Y',
+	\},
+	\'component_function': {
+	\	'ro': 'Readonly',
 	\},
 	\'component_expand': {
 	\	'git': 'LlGit',
 	\},
-	\'subseparator': {'left': '', 'right': '',},
+	\'component_type': {
+	\	'ro': 'readonly',
+	\},
+	\'component_visible_condition': {
+	\	'git': 'LlGit',
+	\	'ro': '&readonly',
+	\},
+	\'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+	\'subseparator': {  'left': "\ue0b1", 'right': "\ue0b3" },
 	\'enable': {'tabline': 0}
 	\}
 
 fun! LlGit()
-	return fugitive#head()
+	if fugitive#head() != ""
+		return "\uf418".' '.fugitive#head()
+	else
+		return ''
+	endif
+endf
+
+fun! Readonly()
+	if &readonly
+		return "\ue725"
+	else 
+		return ''
+	endif
 endf
 
 "Markdown Hightlight
