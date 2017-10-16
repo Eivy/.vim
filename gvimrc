@@ -9,7 +9,7 @@ if has('mac')
 	set gfn=Migu\ 1M\ Regular:h12
 	set ambiwidth=double
 elseif has('win32')
-	set gfn=Migu_1M:h9
+	set gfn=Cica:h9
 	set ambiwidth=double
 elseif has('xfontset')
 	" UNIX用 (xfontsetを使用)
