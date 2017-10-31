@@ -67,6 +67,9 @@ if dein#load_state(vimpath.'remote')
 	if has('gui')
 		call dein#add('thinca/vim-fontzoom',		{'lazy': 1, 'on_cmd': 'Fontzoom'})
 	endif
+	if !has('mac')
+		call dein#add('eivy/vim-vbnet', {'lazy':1, 'on_ft':['vb']})
+	endif
 	if !has('kaoriya')
 		call dein#add('Shougo/vimproc', {'build': 'make'})
 	endif
