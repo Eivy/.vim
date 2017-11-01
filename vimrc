@@ -26,7 +26,6 @@ if dein#load_state(vimpath.'remote')
 	call dein#add('Shougo/neomru.vim')
 	call dein#add('Shougo/unite.vim')
 	call dein#add('Shougo/vimfiler')
-	call dein#add('editorconfig/editorconfig-vim')
 	call dein#add('emonkak/vim-metarw-gist')
 	call dein#add('haya14busa/vim-migemo')
 	call dein#add('itchyny/lightline.vim')
@@ -39,7 +38,6 @@ if dein#load_state(vimpath.'remote')
 
 	call dein#add('Eivy/Align',					{'lazy': 1, 'on_cmd': ['Align', 'AlignCtrl'], 'on_map': '<leader>t'})
 	call dein#add('Eivy/applescript.vim',		{'lazy': 1, 'on_ft' : 'applescript'})
-	call dein#add('Eivy/commenter.vim',			{'lazy': 1, 'on_map': '<Plug>(Commenter-'})
 	call dein#add('Shougo/neocomplete.vim',		{'lazy': 1, 'on_i'  : 1})
 	call dein#add('Shougo/neosnippet',			{'lazy': 1, 'on_i'  : 1, 'on_ft': 'neosnippet'})
 	call dein#add('Shougo/neosnippet-snippets',	{'lazy': 1, 'on_i'  : 1})
@@ -72,6 +70,9 @@ if dein#load_state(vimpath.'remote')
 	endif
 	if !has('kaoriya')
 		call dein#add('Shougo/vimproc', {'build': 'make'})
+	endif
+	if has('python')
+		call dein#add('editorconfig/editorconfig-vim')
 	endif
 
 	call dein#end()
