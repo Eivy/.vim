@@ -217,10 +217,10 @@ let g:lightline = {
 	\	'right': [['line'], ['type', 'enc', 'ff']]
 	\},
 	\'component': {
-	\	'co': '%3v',
+	\	'co': '%v',
 	\	'enc': '%{strlen(&fenc)?&fenc:&enc}',
 	\	'ff': '%{&ff}',
-	\	'line': '%4l:%4L',
+	\	'line': '%l:%L',
 	\	'mode': '%{lightline#mode()}',
 	\	'path': '%f %M',
 	\	'type': '%Y',
