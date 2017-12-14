@@ -143,6 +143,10 @@ fun! FoldText()
 	return line . repeat(' ', winwidth(0)-(len(line)+len(foldinfo)+nuwidth)) . foldinfo
 endf
 
+fun! Term()
+	call term_start({'vertical': 1, 'term_finish': 'close', 'term_cols': 40})
+endf
+
 "mapping
 nnoremap & :&&<CR>
 
