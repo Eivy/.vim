@@ -1,5 +1,5 @@
 "      Author: Eivy
-" Last Change: 21-Sep-2017.
+" Last Change: 24-Nov-2017.
 scriptencoding=utf-8
 
 "---------------------------------------------------------------------------
@@ -9,7 +9,7 @@ if has('mac')
 	set gfn=Migu\ 1M\ Regular:h12
 	set ambiwidth=double
 elseif has('win32')
-	set gfn=Cica:h9
+	set gfn=Cica:h11
 	set ambiwidth=double
 elseif has('xfontset')
 	" UNIX用 (xfontsetを使用)
