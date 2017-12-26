@@ -257,7 +257,7 @@ endf
 
 fun! Readonly()
 	if &readonly
-		return "\ue725"
+		return "\ue0a2"
 	else 
 		return ''
 	endif
