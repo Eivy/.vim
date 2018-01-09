@@ -7,3 +7,4 @@ remote/cache_gvim
 remote/repos
 remote/state_vim.vim
 remote/state_gvim.vim
+pack/
