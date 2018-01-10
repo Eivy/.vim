@@ -131,6 +131,7 @@ nnoremap <silent> gdn :VersDiff +<CR>
 nnoremap <silent> gde :VersDiff -c<CR>
 
 "Unite.vim
+packadd github.com_Shougo_unite.vim
 call unite#custom#profile('default', 'context', {'direction': 'belowright', 'winheight':10, 'auto-resize': 1, 'start_insert': 1})
 call unite#custom#source('neomru/file', 'ignore_pattern', '+$\|.git/\|.svn/\|\%(^\%(fugitive\)://\)')
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
@@ -140,5 +141,6 @@ nnoremap <silent> guv :VimFilerExplorer<CR>
 nnoremap <silent> <C-p> :Unite file_rec/async<CR>
 
 "vimfiler
+packadd github.com_Shougo_vimfiler
 let g:vimfiler_as_default_explorer=1
 call vimfiler#custom#profile('default', 'context', {'safe': 0, 'simple': 1})
