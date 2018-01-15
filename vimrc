@@ -144,3 +144,12 @@ nnoremap <silent> <C-p> :Unite file_rec/async<CR>
 packadd github.com_Shougo_vimfiler
 let g:vimfiler_as_default_explorer=1
 call vimfiler#custom#profile('default', 'context', {'safe': 0, 'simple': 1})
+
+packadd github.com_prabirshrestha_asyncomplete.vim
+packadd github.com_yami-beta_asyncomplete-omni.vim
+call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
+\ 'name': 'omni',
+\ 'whitelist': ['*'],
+\ 'blacklist': ['html'],
+\ 'completor': function('asyncomplete#sources#omni#completor')
+\  }))
