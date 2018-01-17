@@ -148,6 +148,7 @@ call vimfiler#custom#profile('default', 'context', {'safe': 0, 'simple': 1})
 packadd github.com_prabirshrestha_asyncomplete.vim
 packadd github.com_prabirshrestha_asyncomplete-buffer.vim
 packadd github.com_prabirshrestha_asyncomplete-tags.vim
+packadd github.com_prabirshrestha_asyncomplete-file.vim
 packadd github.com_prabirshrestha_asyncomplete-neosnippet.vim
 packadd github.com_yami-beta_asyncomplete-omni.vim
 call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
@@ -168,6 +169,12 @@ call asyncomplete#register_source(asyncomplete#sources#tags#get_source_options({
 \ 'config': {
 \    'max_file_size': 50000000,
 \  },
+\ }))
+call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+\ 'name': 'file',
+\ 'whitelist': ['*'],
+\ 'priority': 10,
+\ 'completor': function('asyncomplete#sources#file#completor'),
 \ }))
 call asyncomplete#register_source(asyncomplete#sources#neosnippet#get_source_options({
 \ 'name': 'neosnippet',
