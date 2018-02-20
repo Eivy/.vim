@@ -1,3 +1,0 @@
-[submodule "remote/dein.vim"]
-	path = remote/dein.vim
-	url = https://github.com/Shougo/dein.vim
