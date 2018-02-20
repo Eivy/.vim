@@ -62,6 +62,7 @@ exe 'set vi+=n'.vimpath.'info'
 set synmaxcol=300
 set visualbell t_vb=
 set noerrorbells
+set pyx=3
 colo eivy
 syntax enable
 
