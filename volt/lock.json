@@ -1,0 +1,350 @@
+{
+  "version": 2,
+  "trx_id": 119,
+  "current_profile_name": "default",
+  "repos": [
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/tyru/caw.vim",
+      "version": "50efcd94e00dc3e814bcc0d3d8ccfa3ff324ea42"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/vim-gotham",
+      "version": "3c9816ae575600e1433126c5c979f331a950443b"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/vim-metarw-simplenote",
+      "version": "c951fb6196163bded9923110e9ef225bf62ce2b4"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/neomru.vim",
+      "version": "97540f54fa20b94daf306f0c1f3cce983bbf7a1d"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/unite.vim",
+      "version": "cc0af4798f91e1c3a4a78ae028a3ac3e61d25eb3"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/vimfiler",
+      "version": "0c0c1840874713bdca4a61713d9550902038ab69"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/emonkak/vim-metarw-gist",
+      "version": "a93e2bdefc7e334aed888e7fd48848de8b2086af"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/haya14busa/vim-migemo",
+      "version": "9c83047985c3c141fef55a38ee525ff7ab4ed415"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/hotwatermorning/auto-git-diff",
+      "version": "271a10c99f4cb1807769d724ea38293e5789502d"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/itchyny/lightline.vim",
+      "version": "78c43c144643e49c529a93b9eaa4eda12614f923"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/kana/vim-metarw",
+      "version": "3082902c82c3fd0a8aa26df6a5855d70e66022c5"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/mattn/webapi-vim",
+      "version": "6459fbdd7fd38c4630fb49e9c687946633b58849"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/osyo-manga/unite-quickfix",
+      "version": "f9b8d5f95ff2536abca1e81bd67dc740e5ee24a6"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/tpope/vim-fugitive",
+      "version": "b82abd5bd583cfb90be63ae12adc36a84577bd45"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/Align",
+      "version": "dc1e57c0ef43d140cf8b8c14e72c8bb50a847746"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/applescript.vim",
+      "version": "5837e519edf6d9bc454229ee1b9f7719c27c2857"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/neosnippet",
+      "version": "e38afeab494bbc66be15e181bc96b78df3654a88"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/neosnippet-snippets",
+      "version": "5902053e0202248f0855d7a2b4f562425447493e"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/bkad/CamelCaseMotion",
+      "version": "a010761ecee8fc854787401033a31d267916b7dc"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/fatih/vim-go",
+      "version": "39beabec0d20d8bd03e1d0e3d38c36029ba209c9"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/kana/vim-operator-user",
+      "version": "c3dfd41c1ed516b4b901c97562e644de62c367aa"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/kana/vim-textobj-function",
+      "version": "adb50f38499b1f558cbd58845e3e91117e4538cf"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/kana/vim-textobj-user",
+      "version": "e231b65797b5765b3ee862d71077e9bd56f3ca3e"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/lambdalisue/vim-gista",
+      "version": "b6cd41d0eb480cd79e84f3da3703613d0cf94a6c"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/majutsushi/tagbar",
+      "version": "387bbadda98e1376ff3871aa461b1f0abd4ece70"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/mattn/emmet-vim",
+      "version": "350f0ba10b9ee65837fc5b04a993b14a7a10e5ac"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/mechatroner/rainbow_csv",
+      "version": "64c5d1d61408e5ca408f8d1d4df525221152f3a1"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/posva/vim-vue",
+      "version": "a936d8ab38029ec006861e98f4d2ad1bd1577f83"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/rhysd/vim-gfm-syntax",
+      "version": "c0ff9e4994d4e79c8d5edf963094518dceea2623"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/t9md/vim-choosewin",
+      "version": "2e6a6f62908c913a38d591b7bb800d1ccd7e25d3"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/thinca/vim-quickrun",
+      "version": "8d864e7feb7ac9dded84808f76fcb3fcd3ed8ae3"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/tpope/vim-surround",
+      "version": "e49d6c2459e0f5569ff2d533b4df995dd7f98313"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/tyru/open-browser.vim",
+      "version": "60b22e44fe356179922611ec99830160c1642431"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/zhaocai/DirDiff.vim",
+      "version": "79f33946ebd33ed999573c92b5b1239d76c0bc56"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Rip-Rip/clang_complete",
+      "version": "0918788ea0b9dc4c753ffd162c95f890ae57a275"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/thinca/vim-fontzoom",
+      "version": "b411334b6abaaf07380521d8446a59553fc7f57f"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/vim-vbnet",
+      "version": "f8a5bf8b0a21a9d2603fb14a0260fbb090437ec6"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/vimproc",
+      "version": "2300224d366642f4f8d6f88861535d4ccbe20143"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/editorconfig/editorconfig-vim",
+      "version": "0abb0634a8bf3c760a283e9e7475594b83869a46"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/savevers.vim",
+      "version": "0edcd0f84965a5cdae079f241e553e0ae3ef94a3"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/deoplete.nvim",
+      "version": "b14aa701d24b16404ab177df91ccfb9f9df586fa"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/roxma/nvim-yarp",
+      "version": "b222af8dbbfb35c6d833fd76a940f6ca2fe322fa"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/roxma/vim-hug-neovim-rpc",
+      "version": "e8af9b262bfcae1b2f5c755a099cba9687c33a0a"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/yuratomo/w3m.vim",
+      "version": "228a852b188f1a62ecea55fa48b0ec892fa6bad7"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/w0rp/ale",
+      "version": "f64db199f1c8e4379cc642f6df6de1f70af14a57"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/tpope/vim-liquid",
+      "version": "209f77c9550a90b0b88492c93852195c171f6ebd"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Shougo/context_filetype.vim",
+      "version": "514b50f812904f063736cda3c787db7d9b290151"
+    },
+    {
+      "type": "git",
+      "trx_id": 119,
+      "path": "github.com/Eivy/vim-html_ruby",
+      "version": "f378ab479d8a668b6729a19ae92bc3d341a6cb7a"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "default",
+      "repos_path": [
+        "github.com/tyru/caw.vim",
+        "github.com/Eivy/vim-gotham",
+        "github.com/Eivy/vim-metarw-simplenote",
+        "github.com/Shougo/neomru.vim",
+        "github.com/Shougo/unite.vim",
+        "github.com/Shougo/vimfiler",
+        "github.com/emonkak/vim-metarw-gist",
+        "github.com/haya14busa/vim-migemo",
+        "github.com/hotwatermorning/auto-git-diff",
+        "github.com/itchyny/lightline.vim",
+        "github.com/kana/vim-metarw",
+        "github.com/mattn/webapi-vim",
+        "github.com/osyo-manga/unite-quickfix",
+        "github.com/tpope/vim-fugitive",
+        "github.com/Eivy/Align",
+        "github.com/Eivy/applescript.vim",
+        "github.com/Shougo/neosnippet",
+        "github.com/Shougo/neosnippet-snippets",
+        "github.com/bkad/CamelCaseMotion",
+        "github.com/fatih/vim-go",
+        "github.com/kana/vim-operator-user",
+        "github.com/kana/vim-textobj-function",
+        "github.com/kana/vim-textobj-user",
+        "github.com/lambdalisue/vim-gista",
+        "github.com/majutsushi/tagbar",
+        "github.com/mattn/emmet-vim",
+        "github.com/mechatroner/rainbow_csv",
+        "github.com/posva/vim-vue",
+        "github.com/rhysd/vim-gfm-syntax",
+        "github.com/t9md/vim-choosewin",
+        "github.com/thinca/vim-quickrun",
+        "github.com/tpope/vim-surround",
+        "github.com/tyru/open-browser.vim",
+        "github.com/zhaocai/DirDiff.vim",
+        "github.com/Rip-Rip/clang_complete",
+        "github.com/thinca/vim-fontzoom",
+        "github.com/Eivy/vim-vbnet",
+        "github.com/Shougo/vimproc",
+        "github.com/editorconfig/editorconfig-vim",
+        "github.com/Eivy/savevers.vim",
+        "github.com/Shougo/deoplete.nvim",
+        "github.com/roxma/nvim-yarp",
+        "github.com/roxma/vim-hug-neovim-rpc",
+        "github.com/yuratomo/w3m.vim",
+        "github.com/w0rp/ale",
+        "github.com/tpope/vim-liquid",
+        "github.com/Shougo/context_filetype.vim",
+        "github.com/Eivy/vim-html_ruby"
+      ]
+    }
+  ]
+}
