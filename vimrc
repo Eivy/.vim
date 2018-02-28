@@ -72,10 +72,10 @@ set foldtext=FoldText()
 fun! FoldText()
 	let lines=string(v:foldend - v:foldstart +1)
 	let top=substitute(getline(v:foldstart), '\t', repeat(' ', &ts), 'g')
-	let foldinfo=repeat('*',v:foldlevel) . repeat(' ',5-len(lines)) . lines . 'L'
+	let foldinfo=repeat('*',v:foldlevel) . repeat(' ',5-strwidth(lines)) . lines . 'L'
 	let line=strpart(top,0,winwidth(0) - strdisplaywidth(foldinfo))
 	let nuwidth=&nuw > len(line('$')) ? &nuw : len(line('$')) + 1
-	return line . repeat(' ', winwidth(0)-(len(line)+len(foldinfo)+nuwidth)) . foldinfo
+	return line . repeat(' ', winwidth(0)-(strwidth(line)+strwidth(foldinfo)+nuwidth)) . foldinfo
 endf
 
 command! Term call term_start($SHELL, {'vertical': 1, 'term_finish': 'close', 'term_cols': 40})
