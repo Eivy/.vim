@@ -2,7 +2,7 @@ function! s:config()
 endfunction
 
 function! s:loaded_on()
-  return 'start'
+  return 'excmd=W3m'
 endfunction
 
 function! s:depends()
