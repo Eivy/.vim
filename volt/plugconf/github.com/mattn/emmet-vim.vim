@@ -3,7 +3,7 @@ function! s:config()
 endfunction
 
 function! s:loaded_on()
-  return 'filetype=html,xml,vue'
+  return 'filetype=html,xml,vue,markdown,liquid'
 endfunction
 
 function! s:depends()
