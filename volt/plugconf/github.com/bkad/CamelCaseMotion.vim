@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
 	nmap <silent> <leader>w <Plug>CamelCaseMotion_w
 	xmap <silent> <leader>w <Plug>CamelCaseMotion_w
 	omap <silent> <leader>w <Plug>CamelCaseMotion_w
@@ -13,6 +13,9 @@ function! s:config()
 	xmap <silent> <leader>e <Plug>CamelCaseMotion_e
 	omap <silent> <leader>e <Plug>CamelCaseMotion_e
 	omap <silent> i<leader>e <Plug>CamelCaseMotion_ie
+endfunction
+
+function! s:on_load_post()
 endfunction
 
 function! s:loaded_on()

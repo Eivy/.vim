@@ -1,7 +1,10 @@
-function! s:config()
+function! s:on_load_pre()
 	let g:clang_complete_auto=0
 	let g:clang_auto_select=2
 	let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+endfunction
+
+function! s:on_load_post()
 endfunction
 
 function! s:loaded_on()

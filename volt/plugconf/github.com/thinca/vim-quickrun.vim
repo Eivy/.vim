@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
 	let g:quickrun_config={}
 	let g:quickrun_config['_']={'runner': 'vimproc', 'runner/updatetime': '200', 'outputter/buffer/split': '20'}
 	let g:quickrun_config['applescript']={'exec': 'osascript ~/Code/AppleScript/quickrun.applescript %s'}
@@ -11,6 +11,9 @@ function! s:config()
 	let g:quickrun_config['html']={'command': 'cat', 'outputter': 'browser'}
 	let g:quickrun_config['xhtml']=g:quickrun_config.html
 	nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
+endfunction
+
+function! s:on_load_post()
 endfunction
 
 function! s:loaded_on()

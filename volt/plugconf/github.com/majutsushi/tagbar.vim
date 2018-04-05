@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
 	let g:tagbar_type_go = {
 				\'ctagstype' : 'go',
 				\'kinds'     : [
@@ -26,6 +26,9 @@ function! s:config()
 				\'ctagsbin'  : 'gotags',
 				\'ctagsargs' : '-sort -silent'
 				\}
+endfunction
+
+function! s:on_load_post()
 endfunction
 
 function! s:loaded_on()

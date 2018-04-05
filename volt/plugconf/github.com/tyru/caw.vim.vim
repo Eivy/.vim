@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
 	let g:caw_no_default_keymappings=1
 	nmap <silent> <leader>g <Plug>(caw:hatpos:toggle:operator)
 	nmap <silent> <leader>gg <Plug>(caw:hatpos:toggle)
@@ -6,6 +6,9 @@ function! s:config()
 	nmap <silent> <leader>G <Plug>(caw:wrap:toggle:operator)
 	nmap <silent> <leader>GG <Plug>(caw:wrap:toggle)
 	vmap <silent> <leader>G <Plug>(caw:wrap:toggle)
+endfunction
+
+function! s:on_load_post()
 endfunction
 
 function! s:loaded_on()

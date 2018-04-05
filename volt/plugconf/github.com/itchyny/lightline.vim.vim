@@ -1,4 +1,4 @@
-function! s:config()
+function! s:on_load_pre()
 	"LigntLine
 	let g:lightline = {
 				\'colorscheme': 'eivy',
@@ -54,6 +54,9 @@ function! s:config()
 	endf
 endfunction
 
+function! s:on_load_post()
+endfunction
+
 function! s:loaded_on()
   return 'start'
 endfunction
@@ -61,3 +64,19 @@ endfunction
 function! s:depends()
   return []
 endfunction
+
+fun! LlGit()
+		if fugitive#head() != ""
+			return "\uf418".' '.fugitive#head()
+		else
+			return ''
+		endif
+	endf
+
+fun! Readonly()
+		if &readonly
+			return "\ue0a2"
+		else 
+			return ''
+		endif
+	endf
