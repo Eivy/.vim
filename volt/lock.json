@@ -70,7 +70,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "40d78f07dee2ffab68abb9d6d1a9e27843df0fe0"
+      "version": "b1df5f1226676ae52380a214e0b13af1250951cd"
     },
     {
       "type": "git",
@@ -85,7 +85,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet",
-      "version": "8cf286e3bf7a5fc859f4c5f1bef52c351f24fefa"
+      "version": "fa7cc15aee58157d54e0965e70c00305764058f4"
     },
     {
       "type": "git",
@@ -100,7 +100,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "7491209072ed4aa746e6fe7894f976ecd251801e"
+      "version": "e1002d8978e55c0762cc9e8f4de05d91a3e380d7"
     },
     {
       "type": "git",
@@ -130,7 +130,7 @@
     {
       "type": "git",
       "path": "github.com/mattn/emmet-vim",
-      "version": "1ba2eb67fb801ab12cd8c1cdc3d455366070b187"
+      "version": "fb31b5dbb653cee276b57bc98af802a3aeed64fd"
     },
     {
       "type": "git",
@@ -155,7 +155,7 @@
     {
       "type": "git",
       "path": "github.com/thinca/vim-quickrun",
-      "version": "8abebf5e17cedef247eb7416b7c62a057a9ac66e"
+      "version": "4b493faaeb5322f11cadab52e39a53164baf9db7"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "e5ba0bb358635b09cb10867650be6543811e0ee8"
+      "version": "3fb71d7d71e769d29487e0ad47b4b0adefa2a58b"
     },
     {
       "type": "git",
@@ -225,7 +225,7 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "3331f6c8f4a1a8ffff90ec1a2faea36eff55fe7c"
+      "version": "38c66d33fe8022803497c49239b06112ccbd0a83"
     },
     {
       "type": "git",
@@ -265,7 +265,7 @@
     {
       "type": "git",
       "path": "github.com/autozimu/LanguageClient-neovim",
-      "version": "da8c691b81794d1acc1da7c6d4097a9780574457"
+      "version": "55f37c7410a2e6cd32ab639f79b74765a047a280"
     }
   ],
   "profiles": [
