@@ -30,7 +30,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/vimfiler",
-      "version": "0c0c1840874713bdca4a61713d9550902038ab69"
+      "version": "b5a8b546e8aa0297e34d99348ac0a76bce4063e4"
     },
     {
       "type": "git",
@@ -70,7 +70,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "b1df5f1226676ae52380a214e0b13af1250951cd"
+      "version": "b14434bae0357dd47b33f940c3a02510c44fbbe2"
     },
     {
       "type": "git",
@@ -100,7 +100,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "e1002d8978e55c0762cc9e8f4de05d91a3e380d7"
+      "version": "9c7a7765b7c614aa792fb60ab63a50078dea3a80"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "3fb71d7d71e769d29487e0ad47b4b0adefa2a58b"
+      "version": "26334d38a530754368a8fce91ca8f5ef8d3643a3"
     },
     {
       "type": "git",
@@ -265,7 +265,7 @@
     {
       "type": "git",
       "path": "github.com/autozimu/LanguageClient-neovim",
-      "version": "55f37c7410a2e6cd32ab639f79b74765a047a280"
+      "version": "7cf0f288ce80d633f3f68a6476260e0dd48f6bc0"
     }
   ],
   "profiles": [
