@@ -9,5 +9,5 @@ function! s:loaded_on()
 endfunction
 
 function! s:depends()
-  return ['posva/vim-vue', 'Quramy/tsuquyomi']
+  return ['posva/vim-vue']
 endfunction
