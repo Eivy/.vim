@@ -50,7 +50,7 @@
     {
       "type": "git",
       "path": "github.com/itchyny/lightline.vim",
-      "version": "41fb97e85b0386b976b39051de4f7eaa42ba6b2b"
+      "version": "555f202e33987863aaa31bf4df75ef989c3c49a7"
     },
     {
       "type": "git",
@@ -70,7 +70,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "b14434bae0357dd47b33f940c3a02510c44fbbe2"
+      "version": "2a4714335fa34f5a03c2918f172b1077b36daa79"
     },
     {
       "type": "git",
@@ -90,7 +90,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet-snippets",
-      "version": "f453635c60998071299c3239c3d881f2be0c248e"
+      "version": "1f2021fd12025d6b036234af6cdf92d73612a4f1"
     },
     {
       "type": "git",
@@ -100,7 +100,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "9c7a7765b7c614aa792fb60ab63a50078dea3a80"
+      "version": "1b8d09923d034e8ecad849415d0b6d848c181f3c"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "26334d38a530754368a8fce91ca8f5ef8d3643a3"
+      "version": "9a72cb89631dafd776fdcb88c65954ccaf0d00a7"
     },
     {
       "type": "git",
@@ -225,7 +225,7 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "38c66d33fe8022803497c49239b06112ccbd0a83"
+      "version": "d8d13ef264340113b74a3310a203416f2916b2f5"
     },
     {
       "type": "git",
@@ -246,16 +246,6 @@
       "type": "git",
       "path": "github.com/leafgarland/typescript-vim",
       "version": "e25636b44211a4be7b089bfed7cf09aa7dd086f5"
-    },
-    {
-      "type": "git",
-      "path": "github.com/Quramy/tsuquyomi-vue",
-      "version": "60c6f47dcb0491d619cf642bfd4f39610e9b500c"
-    },
-    {
-      "type": "git",
-      "path": "github.com/Quramy/tsuquyomi",
-      "version": "94f10d312134fc59b53b2e821d3315320f694cf0"
     },
     {
       "type": "git",
@@ -321,8 +311,6 @@
         "github.com/Shougo/context_filetype.vim",
         "github.com/Eivy/vim-html_ruby",
         "github.com/leafgarland/typescript-vim",
-        "github.com/Quramy/tsuquyomi-vue",
-        "github.com/Quramy/tsuquyomi",
         "github.com/dart-lang/dart-vim-plugin",
         "github.com/autozimu/LanguageClient-neovim"
       ]
