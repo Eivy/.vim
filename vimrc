@@ -130,3 +130,5 @@ let g:savevers_max=30
 nnoremap <silent> gdp :VersDiff -<CR>
 nnoremap <silent> gdn :VersDiff +<CR>
 nnoremap <silent> gde :VersDiff -c<CR>
+
+silent! pythonx 1
