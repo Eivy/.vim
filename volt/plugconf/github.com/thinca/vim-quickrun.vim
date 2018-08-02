@@ -10,6 +10,7 @@ function! s:on_load_pre()
 	let g:quickrun_config['objc']={'exec': ['clang -framework cocoa %s -o %s:p:r','%s:p:r %a'], 'tempfile': '%{tempname()}.m', 'hook/sweep/files': '%S:p:r' }
 	let g:quickrun_config['html']={'command': 'cat', 'outputter': 'browser'}
 	let g:quickrun_config['xhtml']=g:quickrun_config.html
+	let g:quickrun_config['sql']={'command': 'mssql', 'cmdopt': '-c ~/.config/mssql'}
 	nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
 endfunction
 

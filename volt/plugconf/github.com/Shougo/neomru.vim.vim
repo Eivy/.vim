@@ -9,5 +9,5 @@ function! s:loaded_on()
 endfunction
 
 function! s:depends()
-  return ['github.com/Shougo/unite.vim']
+  return ['github.com/Shougo/denite.vim']
 endfunction

@@ -36,11 +36,9 @@ if has('autocmd') && has('syntax')
 		au BufReadPost,WinEnter,VimEnter * if &ft !~ 'fugitiveblame\|tagbar\|vimfiler\|help' | set nu | endif
 		au ColorScheme * call <SID>ZenkakuSpace()
 		au InsertEnter,InsertLeave * set imi=0 ims=0
-		au QuickFixCmdPost vimgrep,grep Unite quickfix
 		if exists("+omnifunc")
 			au Filetype * if &ofu == "" | setlocal ofu=syntaxcomplete#Complete | endif
 		endif
-		au FileType unite imap <buffer> <ESC> <Plug>(unite_exit)
 	aug END
 endif
 
