@@ -50,7 +50,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "4d684256baa07f14800f277a892396ef325c8702"
+      "version": "a615172b14c130401f64d73fc86ed0fa632aa032"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "3aa5e0f9dc615ba8e30ef5a2e978d2c8a7fea17f"
+      "version": "41178425aba501be0fa70e18e3ad673395c2bb49"
     },
     {
       "type": "git",
@@ -235,7 +235,7 @@
     {
       "type": "git",
       "path": "github.com/autozimu/LanguageClient-neovim",
-      "version": "b4ad4600a3f99616a0e19b1cf921b3e885ba3981"
+      "version": "a1b90a7e0c4a066c41daa098f0258b296702f620"
     },
     {
       "type": "git",
