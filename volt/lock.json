@@ -50,7 +50,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "a615172b14c130401f64d73fc86ed0fa632aa032"
+      "version": "6138aebbbb38eee7265f00aca15e2331c248b5b2"
     },
     {
       "type": "git",
@@ -70,7 +70,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet-snippets",
-      "version": "e1916227818921165561cb3434fcde6f75a94a0f"
+      "version": "b56e303928b144302d68349ac84d9c7571380d38"
     },
     {
       "type": "git",
@@ -80,7 +80,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "a6e62dc08b4396858270d9c3c0f56f68530ccc8c"
+      "version": "04699c8916c777ad3c6dc8a803d55d8d222b3026"
     },
     {
       "type": "git",
@@ -110,7 +110,7 @@
     {
       "type": "git",
       "path": "github.com/mattn/emmet-vim",
-      "version": "3fb134b503eeb3fc6cf91a7fd9716a7fb7dbeed6"
+      "version": "63c98d801b2123cc0e88f622644770ca7d89e791"
     },
     {
       "type": "git",
@@ -120,7 +120,7 @@
     {
       "type": "git",
       "path": "github.com/posva/vim-vue",
-      "version": "e531e1d24f24385a5f4d2f1ba36d972a57ec52d9"
+      "version": "23043a7ebfa03b4a25bdb4fa6b7e4f3df6df6b1c"
     },
     {
       "type": "git",
@@ -185,7 +185,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "57ae32605a786fbb2c88bd5c7427dec41df0e209"
+      "version": "920a9bedf2195114f60b1ca8a9c185ad0604ca2d"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "41178425aba501be0fa70e18e3ad673395c2bb49"
+      "version": "fc94fd4deb59c4dc6882aa73bd08c721d33facea"
     },
     {
       "type": "git",
@@ -235,12 +235,12 @@
     {
       "type": "git",
       "path": "github.com/autozimu/LanguageClient-neovim",
-      "version": "a1b90a7e0c4a066c41daa098f0258b296702f620"
+      "version": "e5c879db087e385c6a8e7ecf224b36077d916e54"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/denite.nvim",
-      "version": "e1327c1da31257687f88e5b588aaa05af2e19e4e"
+      "version": "27ffda7b846e5addc9d2aa7da64b0dc963e03d90"
     },
     {
       "type": "git",

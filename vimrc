@@ -119,14 +119,3 @@ let g:markdown_fenced_languages = [
 
 "MatchIt
 ru macros/matchit.vim
-
-"savevers.vim
-let g:savevers_types="*"
-let g:savevers_dirs=&backupdir
-let g:versdiff_no_resize=1
-let g:savevers_max=30
-nnoremap <silent> gdp :VersDiff -<CR>
-nnoremap <silent> gdn :VersDiff +<CR>
-nnoremap <silent> gde :VersDiff -c<CR>
-
-silent! pythonx 1
