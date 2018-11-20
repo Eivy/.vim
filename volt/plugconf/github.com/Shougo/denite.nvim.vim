@@ -15,5 +15,5 @@ function! s:loaded_on()
 endfunction
 
 function! s:depends()
-	return []
+  return ['roxma/vim-yarp', 'roxma/vim-hug-neovim-rpc.vim']
 endfunction
