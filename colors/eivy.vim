@@ -226,7 +226,7 @@ if has("gui_running") || &t_Co == 256
 	call <SID>X("Cursor", "000000", "00dee2", "none")
 	call <SID>X("CursorIM", "000000", "ffaa00", "none")
 	call <SID>X("Normal", "cccccc", "000000", "none")
-	call <SID>X("NonText", "600018", "000000", "none")
+	call <SID>X("NonText", "a00058", "000000", "none")
 	call <SID>X("LineNr", "888888", "2d3a5d", "none")
 	call <SID>X("CursorLineNr", "ffffff", "3b659f", "none")
 	call <SID>X("StatusLineNC", "888888", "4f0303", "none")
