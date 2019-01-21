@@ -1,5 +1,6 @@
 info
 .netrwhist
+.netrwhist+
 view/
 remote/.cache
 remote/cache_vim
