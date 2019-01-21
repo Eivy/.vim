@@ -61,6 +61,7 @@ set synmaxcol=300
 set visualbell t_vb=
 set noerrorbells
 set pyx=3
+set cot+=noselect
 colo eivy
 syntax enable
 
@@ -102,6 +103,7 @@ let g:markdown_fenced_languages = [
 	\'cs',
 	\'c#=cs',
 	\'css',
+	\'dart',
 	\'go',
 	\'html',
 	\'javascript',

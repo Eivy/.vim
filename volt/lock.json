@@ -5,7 +5,7 @@
     {
       "type": "git",
       "path": "github.com/tyru/caw.vim",
-      "version": "0060d6fbf53e02a153c5faf6eca1d10c1ed7c489"
+      "version": "98805a60aef339e55e5b917fdb9f69c74e8d8340"
     },
     {
       "type": "git",
@@ -30,12 +30,12 @@
     {
       "type": "git",
       "path": "github.com/hotwatermorning/auto-git-diff",
-      "version": "271a10c99f4cb1807769d724ea38293e5789502d"
+      "version": "1be2fec036f747fe44ec7f0a3868af0b0980954f"
     },
     {
       "type": "git",
       "path": "github.com/itchyny/lightline.vim",
-      "version": "1ef44bfa50320347004be77f836e97dc4f54982e"
+      "version": "83ae633be323a7fb5baf77e493232cf3358d02bf"
     },
     {
       "type": "git",
@@ -50,7 +50,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "73220820b5eb399d29067f114888da0d8e1e08da"
+      "version": "552baf98b31c5f07eefdab5a67a20767c5b94547"
     },
     {
       "type": "git",
@@ -65,12 +65,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet",
-      "version": "45b6a8688cc743f3855b866ff47b0f0e9481bf8d"
+      "version": "a943f93433cb467688b405b62922c7e6013edeb8"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet-snippets",
-      "version": "ec928a971f32150119f0ab73d289ea82e2740ae0"
+      "version": "0389e5b358b1b26189a17726f5eb22df80c293b6"
     },
     {
       "type": "git",
@@ -80,7 +80,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "189676476a638364e76fce9998c37f7ac79f7056"
+      "version": "a61545f09cad6df2e7a4918cbd6981811f612ae9"
     },
     {
       "type": "git",
@@ -110,12 +110,12 @@
     {
       "type": "git",
       "path": "github.com/mattn/emmet-vim",
-      "version": "e6fb10d22a9bd2a02c386c81486a065e71c6a92d"
+      "version": "19e3240bf31030e38406700f5dcaa593e3d6b102"
     },
     {
       "type": "git",
       "path": "github.com/mechatroner/rainbow_csv",
-      "version": "654c54169b5ddec7a4f70f8c11bc69e5b00f96e5"
+      "version": "9c6209360e30c1f5771ee288a9694281916ad4df"
     },
     {
       "type": "git",
@@ -185,12 +185,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "48bcbe06757907de62919d27dc75d51dc1deed3a"
+      "version": "4de241047efa152e4c764de19c57fa2152177d11"
     },
     {
       "type": "git",
       "path": "github.com/roxma/nvim-yarp",
-      "version": "5443ac06b3989baa9262adec810503e0234c316e"
+      "version": "1524cf7988d1e1ed7475ead3654987f64943a1f0"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "f1ed654ca5318de5a24b37d882e55e04e4e566c8"
+      "version": "d1fc084b2d3af6dd9807a01a6ca7822af6c2a78f"
     },
     {
       "type": "git",
@@ -235,12 +235,12 @@
     {
       "type": "git",
       "path": "github.com/autozimu/LanguageClient-neovim",
-      "version": "12a1f60cb25754c6e63c56a4df79aed280377710"
+      "version": "c55dd6578612eaa56fe88ad2402c5d2b2eb58bb1"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/denite.nvim",
-      "version": "c21dd10b6d1c4fd3805b130e1a6551daadb8c111"
+      "version": "992e0dc103a9182bcbad68f73625eef6f0ddeea2"
     },
     {
       "type": "git",
@@ -250,12 +250,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/defx.nvim",
-      "version": "e751e86bf5ec4340485607ee537129f22cee9186"
+      "version": "1b832b28c21b73c5c8425dc788fe3f6e5453bb52"
     },
     {
       "type": "git",
       "path": "github.com/udalov/kotlin-vim",
-      "version": "51578840c576b1523364dc0721009701f73e497a"
+      "version": "aea4336a1d66d91f1e87e8ebf2b33fd506bad74e"
     },
     {
       "type": "git",
