@@ -50,7 +50,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "552baf98b31c5f07eefdab5a67a20767c5b94547"
+      "version": "d27dbc40d4264525b1c812482bf0efecfed53f28"
     },
     {
       "type": "git",
@@ -65,7 +65,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet",
-      "version": "a943f93433cb467688b405b62922c7e6013edeb8"
+      "version": "a3c618221999a64997d32563fc6bdabdb63e898d"
     },
     {
       "type": "git",
@@ -110,7 +110,7 @@
     {
       "type": "git",
       "path": "github.com/mattn/emmet-vim",
-      "version": "19e3240bf31030e38406700f5dcaa593e3d6b102"
+      "version": "19f2821b7b457a2db7f7e4c25ade0b947b560fb0"
     },
     {
       "type": "git",
@@ -185,7 +185,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "4de241047efa152e4c764de19c57fa2152177d11"
+      "version": "067ed5acdc77d200fb6c2bb28caee63f5781bba3"
     },
     {
       "type": "git",
@@ -195,7 +195,7 @@
     {
       "type": "git",
       "path": "github.com/roxma/vim-hug-neovim-rpc",
-      "version": "c5e8f3f8feefc175a69f44da4a2730fa37276e46"
+      "version": "c734760fca56947aa6c3a7b34d25973268938f4e"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "d1fc084b2d3af6dd9807a01a6ca7822af6c2a78f"
+      "version": "067601e9db7e0c2ab6c8394c9be74769463c6da9"
     },
     {
       "type": "git",
@@ -230,17 +230,17 @@
     {
       "type": "git",
       "path": "github.com/dart-lang/dart-vim-plugin",
-      "version": "92549da8b1650a72ce0f002dd660dcbe3df34871"
+      "version": "2234fcaa424feb056b2a8f410873a1f9b8a19092"
     },
     {
       "type": "git",
       "path": "github.com/autozimu/LanguageClient-neovim",
-      "version": "c55dd6578612eaa56fe88ad2402c5d2b2eb58bb1"
+      "version": "657ad707d8732fc5a2139224cb00132880455904"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/denite.nvim",
-      "version": "992e0dc103a9182bcbad68f73625eef6f0ddeea2"
+      "version": "613e33123b8aa2abd8e020867c26a5e6d9ea47d4"
     },
     {
       "type": "git",
@@ -250,7 +250,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/defx.nvim",
-      "version": "1b832b28c21b73c5c8425dc788fe3f6e5453bb52"
+      "version": "bdd4896617f91800932ba2aaa4b2d019ae75ef1c"
     },
     {
       "type": "git",
