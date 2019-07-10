@@ -3,6 +3,7 @@ function! s:on_load_pre()
 endfunction
 
 function! s:on_load_post()
+  command! -nargs=+ -complete=dir -bang E Defx <args>
   autocmd FileType defx call s:defx_my_settings()
   function! s:defx_my_settings() abort
     " Define mappings
@@ -15,7 +16,9 @@ function! s:on_load_post()
     nnoremap <silent><buffer><expr> p
           \ defx#do_action('paste')
     nnoremap <silent><buffer><expr> l
-          \ defx#do_action('open')
+          \ defx#do_action('open_tree')
+    nnoremap <silent><buffer><expr> h
+          \ defx#do_action('close_tree')
     nnoremap <silent><buffer><expr> v
           \ defx#do_action('open', 'vsplit')
     nnoremap <silent><buffer><expr> K
@@ -32,7 +35,7 @@ function! s:on_load_post()
           \ defx#do_action('yank_path')
     nnoremap <silent><buffer><expr> .
           \ defx#do_action('toggle_ignored_files')
-    nnoremap <silent><buffer><expr> h
+    nnoremap <silent><buffer><expr> -
           \ defx#do_action('cd', ['..'])
     nnoremap <silent><buffer><expr> ~
           \ defx#do_action('cd')
