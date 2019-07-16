@@ -7,7 +7,6 @@ function! s:on_load_pre()
           \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
           \ 'whitelist': ['go'],
           \ })
-    autocmd BufWritePre *.go LspDocumentFormatSync
     autocmd FileType go call s:configure_lsp()
   endif
   if executable('dart_language_server')
@@ -45,6 +44,9 @@ function! s:on_load_pre()
     nnoremap <buffer> K :<C-u>LspHover<CR>
     nnoremap <buffer> <F1> :<C-u>LspImplementation<CR>
     nnoremap <buffer> <F2> :<C-u>LspRename<CR>
+    augroup LSP
+      autocmd BufWritePre * silent LspDocumentFormatSync
+    augroup END
   endfunction
 endfunction
 
