@@ -1,16 +1,14 @@
 " vim:et:sw=2:ts=2
 
 function! s:on_load_pre()
-  " if executable('gopls')
-  "   augroup LSPGo
-  "     au User lsp_setup call lsp#register_server({
-  "          \ 'name': 'gopls',
-  "          \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
-  "          \ 'whitelist': ['go'],
-  "          \ })
-  "     autocmd FileType go setlocal omnifunc=lsp#complete
-  "   augroup END
-  " endif
+  if executable('gopls')
+    au User lsp_setup call lsp#register_server({
+         \ 'name': 'gopls',
+         \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
+         \ 'whitelist': ['go'],
+         \ })
+    autocmd BufWritePre *.go LspDocumentFormatSync
+  endif
   if executable('dart_language_server')
     augroup LSPDart
       au!
@@ -43,5 +41,5 @@ function! s:loaded_on()
 endfunction
 
 function! s:depends()
-  return []
+  return ['prabirshrestha/async.vim']
 endfunction
