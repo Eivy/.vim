@@ -1,6 +1,7 @@
 " vim:et:sw=2:ts=2
 
 function! s:on_load_pre()
+  let g:lsp_diagnostics_echo_cursor=1
   if executable('gopls')
     au User lsp_setup call lsp#register_server({
           \ 'name': 'gopls',
@@ -34,16 +35,18 @@ function! s:on_load_pre()
   function! s:configure_lsp() abort
     setlocal omnifunc=lsp#complete   " オムニ補完を有効化
     " LSP用にマッピング
-    nnoremap <buffer> <C-]> :<C-u>LspDefinition<CR>
-    nnoremap <buffer> ggd :<C-u>LspDefinition<CR>
-    nnoremap <buffer> ggD :<C-u>LspReferences<CR>
-    nnoremap <buffer> ggs :<C-u>LspDocumentSymbol<CR>
-    nnoremap <buffer> ggS :<C-u>LspWorkspaceSymbol<CR>
-    nnoremap <buffer> ggQ :<C-u>LspDocumentFormat<CR>
-    vnoremap <buffer> ggQ :LspDocumentRangeFormat<CR>
-    nnoremap <buffer> K :<C-u>LspHover<CR>
-    nnoremap <buffer> <F1> :<C-u>LspImplementation<CR>
-    nnoremap <buffer> <F2> :<C-u>LspRename<CR>
+    nnoremap <silent> <buffer> <C-]> :<C-u>LspDefinition<CR>
+    nnoremap <silent> <buffer> ggd :<C-u>LspDefinition<CR>
+    nnoremap <silent> <buffer> ggD :<C-u>LspReferences<CR>
+    nnoremap <silent> <buffer> ggs :<C-u>LspDocumentSymbol<CR>
+    nnoremap <silent> <buffer> ggS :<C-u>LspWorkspaceSymbol<CR>
+    nnoremap <silent> <buffer> ggQ :<C-u>LspDocumentFormat<CR>
+    nnoremap <silent> <buffer> <C-j> :<C-u>LspNextError<CR>
+    nnoremap <silent> <buffer> <C-k> :<C-u>LspPreviousError<CR>
+    vnoremap <silent> <buffer> ggQ :LspDocumentRangeFormat<CR>
+    nnoremap <silent> <buffer> K :<C-u>LspHover<CR>
+    nnoremap <silent> <buffer> <F1> :<C-u>LspImplementation<CR>
+    nnoremap <silent> <buffer> <F2> :<C-u>LspRename<CR>
     augroup LSP
       autocmd BufWritePre * silent LspDocumentFormatSync
     augroup END
