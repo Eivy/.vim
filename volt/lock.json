@@ -144,6 +144,16 @@
     },
     {
       "type": "git",
+      "path": "github.com/kristijanhusak/defx-git",
+      "version": "5fdaf368396146e9908453ea1c8723bf9b2d1434"
+    },
+    {
+      "type": "git",
+      "path": "github.com/kristijanhusak/defx-icons",
+      "version": "0bad6993f846d068a7d9f5ff3eea209134cd285d"
+    },
+    {
+      "type": "git",
       "path": "github.com/lambdalisue/vim-gista",
       "version": "b6cd41d0eb480cd79e84f3da3703613d0cf94a6c"
     },
@@ -295,6 +305,8 @@
         "github.com/kana/vim-textobj-function",
         "github.com/kana/vim-textobj-user",
         "github.com/keith/swift.vim",
+        "github.com/kristijanhusak/defx-git",
+        "github.com/kristijanhusak/defx-icons",
         "github.com/lambdalisue/vim-gista",
         "github.com/leafgarland/typescript-vim",
         "github.com/lighttiger2505/deoplete-vim-lsp",
