@@ -261,7 +261,7 @@ if has("gui_running") || &t_Co == 256
 	call <SID>X("TabLineFill", "243a4f", "243a4f", "underline")
 	call <SID>X("TabLineSel", "243a4f", "66a2df", "none")
 
-	call <SID>X("Comment", "707070", "", "none")
+	call <SID>X("Comment", "888888", "", "none")
 	call <SID>X("Constant", "c8d079", "", "none")
 	call <SID>X("Identifier", "797dc8", "", "none")
 	call <SID>X("Statement", "79c4c8", "", "none")
