@@ -224,6 +224,11 @@
     },
     {
       "type": "git",
+      "path": "github.com/ryanoasis/vim-devicons",
+      "version": "0c9e6faaf246767c850eb92f48c4bdc068cdf235"
+    },
+    {
+      "type": "git",
       "path": "github.com/t9md/vim-choosewin",
       "version": "4ac141a9bb7188ebbbff90bb0a0bccd52eaa83f8"
     },
@@ -326,6 +331,7 @@
         "github.com/rhysd/vim-gfm-syntax",
         "github.com/roxma/nvim-yarp",
         "github.com/roxma/vim-hug-neovim-rpc",
+        "github.com/ryanoasis/vim-devicons",
         "github.com/t9md/vim-choosewin",
         "github.com/thinca/vim-fontzoom",
         "github.com/thinca/vim-quickrun",
