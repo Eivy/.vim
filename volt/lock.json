@@ -50,7 +50,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/defx.nvim",
-      "version": "3aa8b4dad17e780a6c91025fbe561531a2d736a5"
+      "version": "8678b1ac3389f84aa64125f15ebfd6ba87f10b12"
     },
     {
       "type": "git",
@@ -60,7 +60,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "7d28b9230e8db9ce9e6be566402a92612e0732e7"
+      "version": "6e9f26a0cf5d7d60ddf04ce126e4adebe5a01cf2"
     },
     {
       "type": "git",
@@ -101,6 +101,11 @@
       "type": "git",
       "path": "github.com/emonkak/vim-metarw-gist",
       "version": "a93e2bdefc7e334aed888e7fd48848de8b2086af"
+    },
+    {
+      "type": "git",
+      "path": "github.com/fatih/vim-go",
+      "version": "d42c9586ce9fe170baa62fe22ea3ecf66417f908"
     },
     {
       "type": "git",
@@ -150,7 +155,7 @@
     {
       "type": "git",
       "path": "github.com/kristijanhusak/defx-icons",
-      "version": "0bad6993f846d068a7d9f5ff3eea209134cd285d"
+      "version": "34b1789eaa8d988ae847af85c185efcb3b53dd74"
     },
     {
       "type": "git",
@@ -195,12 +200,12 @@
     {
       "type": "git",
       "path": "github.com/prabirshrestha/async.vim",
-      "version": "f3014550d7a799097e56b094104dd2cd66cf2612"
+      "version": "627a8c4092df24260d3dc2104bc1d944c78f91ca"
     },
     {
       "type": "git",
       "path": "github.com/prabirshrestha/vim-lsp",
-      "version": "c91d0d52e5331b5448659ff28160170419cb069a"
+      "version": "950782484274cbb7c9d3f7604b46b6f86a8da35c"
     },
     {
       "type": "git",
@@ -235,7 +240,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "4c650c699d1c8f7602976211bf1067fd62d740c5"
+      "version": "07661dc1020b8bc91faf1c530be36232295140f8"
     },
     {
       "type": "git",
@@ -297,6 +302,7 @@
         "github.com/dart-lang/dart-vim-plugin",
         "github.com/editorconfig/editorconfig-vim",
         "github.com/emonkak/vim-metarw-gist",
+        "github.com/fatih/vim-go",
         "github.com/haya14busa/vim-migemo",
         "github.com/hotwatermorning/auto-git-diff",
         "github.com/itchyny/lightline.vim",

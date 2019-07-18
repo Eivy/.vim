@@ -3,7 +3,7 @@ function! s:on_load_pre()
 endfunction
 
 function! s:on_load_post()
-  command! -nargs=+ -complete=dir -bang E Defx -columns='mark:indent:icons:filename:git:time'<args>
+  command! -nargs=+ -complete=dir -bang E Defx -columns='mark:indent:filename:git:time'<args>
   autocmd FileType defx call s:defx_my_settings()
   function! s:defx_my_settings() abort
     " Define mappings

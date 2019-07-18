@@ -19,6 +19,9 @@ function! s:on_load_pre()
             \ 'whitelist': ['dart'],
             \ })
       autocmd FileType dart call s:configure_lsp()
+      augroup LSP
+        autocmd BufWritePre * silent LspDocumentFormatSync
+      augroup END
     augroup END
   endif
   if executable('typescript-language-server')
@@ -30,6 +33,9 @@ function! s:on_load_pre()
             \ 'whitelist': ['typescript'],
             \ })
       autocmd FileType typescript call s:configure_lsp()
+      augroup LSP
+        autocmd BufWritePre * silent LspDocumentFormatSync
+      augroup END
     augroup END
   endif
   function! s:configure_lsp() abort
@@ -47,9 +53,6 @@ function! s:on_load_pre()
     nnoremap <silent> <buffer> K :<C-u>LspHover<CR>
     nnoremap <silent> <buffer> <F1> :<C-u>LspImplementation<CR>
     nnoremap <silent> <buffer> <F2> :<C-u>LspRename<CR>
-    augroup LSP
-      autocmd BufWritePre * silent LspDocumentFormatSync
-    augroup END
   endfunction
 endfunction
 
