@@ -55,12 +55,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/denite.nvim",
-      "version": "3a1b508116652a6c9b4b174ddafaee7852a15fc4"
+      "version": "1b5b057fc5fdae0745b84d15954245ac23618dc2"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "6e9f26a0cf5d7d60ddf04ce126e4adebe5a01cf2"
+      "version": "53ad762d357f74c02c04403325f8f9122ba3bade"
     },
     {
       "type": "git",
@@ -75,7 +75,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet-snippets",
-      "version": "eac39588c45bda3bcd46f386e063309449f23ff5"
+      "version": "25dbe4ac607580fa05940dae24e544147d0bafeb"
     },
     {
       "type": "git",
@@ -95,7 +95,7 @@
     {
       "type": "git",
       "path": "github.com/editorconfig/editorconfig-vim",
-      "version": "37bedf88cabb61d4580295b6e347058df7e7f1b4"
+      "version": "c718cefc51ccdaf7bd27c4c1ae2de55103434241"
     },
     {
       "type": "git",
@@ -105,7 +105,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "d42c9586ce9fe170baa62fe22ea3ecf66417f908"
+      "version": "5b7fa872c5e4081ee38080df1cb937653c465424"
     },
     {
       "type": "git",
@@ -120,7 +120,7 @@
     {
       "type": "git",
       "path": "github.com/itchyny/lightline.vim",
-      "version": "284d3ee0dbdfe7b07a6a927a742d203851215ca4"
+      "version": "bc82a1c7b6d8517d4e9224a254968e0f0b334fdf"
     },
     {
       "type": "git",
@@ -150,7 +150,7 @@
     {
       "type": "git",
       "path": "github.com/kristijanhusak/defx-git",
-      "version": "5fdaf368396146e9908453ea1c8723bf9b2d1434"
+      "version": "8836d83da6a076aa10db4e45e5dbed1f3e0675b9"
     },
     {
       "type": "git",
@@ -190,7 +190,7 @@
     {
       "type": "git",
       "path": "github.com/mechatroner/rainbow_csv",
-      "version": "73fd015c1baa831d6de9345efda02aeea4ff4939"
+      "version": "6d1df475cda371fb695f700e03e1d540de2f36cd"
     },
     {
       "type": "git",
@@ -205,7 +205,7 @@
     {
       "type": "git",
       "path": "github.com/prabirshrestha/vim-lsp",
-      "version": "950782484274cbb7c9d3f7604b46b6f86a8da35c"
+      "version": "55e6cd174980c69062683d110ee1f0dffd6c7730"
     },
     {
       "type": "git",
@@ -230,7 +230,7 @@
     {
       "type": "git",
       "path": "github.com/t9md/vim-choosewin",
-      "version": "4ac141a9bb7188ebbbff90bb0a0bccd52eaa83f8"
+      "version": "ee5690220fa712a448577522b9508e79a07830c6"
     },
     {
       "type": "git",
@@ -245,7 +245,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "07661dc1020b8bc91faf1c530be36232295140f8"
+      "version": "994d1b518f17918d42d56b03b15f74fdbc460801"
     },
     {
       "type": "git",
@@ -255,7 +255,7 @@
     {
       "type": "git",
       "path": "github.com/tpope/vim-surround",
-      "version": "ca58a2d886cc18734c90c9665da4775d444b0c04"
+      "version": "fab8621670f71637e9960003af28365129b1dfd0"
     },
     {
       "type": "git",
@@ -271,6 +271,11 @@
       "type": "git",
       "path": "github.com/udalov/kotlin-vim",
       "version": "b9fa728701a0aa0b9a2ffe92f10880348fc27a8f"
+    },
+    {
+      "type": "git",
+      "path": "github.com/w0rp/ale",
+      "version": "aae6d30b1ec135e37ec3bea1885d161c6174572b"
     },
     {
       "type": "git",
@@ -341,6 +346,7 @@
         "github.com/tyru/caw.vim",
         "github.com/tyru/open-browser.vim",
         "github.com/udalov/kotlin-vim",
+        "github.com/w0rp/ale",
         "github.com/yuratomo/w3m.vim",
         "github.com/zhaocai/DirDiff.vim"
       ]
