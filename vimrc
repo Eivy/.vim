@@ -62,6 +62,7 @@ set visualbell t_vb=
 set noerrorbells
 set pyx=3
 set cot+=noselect
+set wildignorecase
 colo eivy
 syntax enable
 
