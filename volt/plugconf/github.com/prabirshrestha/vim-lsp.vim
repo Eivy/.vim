@@ -7,6 +7,15 @@ function! s:on_load_pre()
           \ 'name': 'gopls',
           \ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
           \ 'whitelist': ['go'],
+          \ 'workspace_config' : {'gopls': {
+          \   'staticcheck': v:true,
+          \   'completeUnimported': v:true,
+          \   'caseSensitiveCompletion': v:true,
+          \   'usePlaceholders': v:true,
+          \   'completeDocumentation': v:true,
+          \   'watchFileChanges': v:true,
+          \   'hoverKind': 'SingleLine',
+          \ }},
           \ })
     autocmd FileType go call s:configure_lsp()
   endif
