@@ -55,12 +55,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/denite.nvim",
-      "version": "a184e87b7df5e8f35aee115153b37f178e47718c"
+      "version": "c3206a06508a197650ee4e1d85da39ff24e3a56b"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "db7d2dc5f416634c9917054bcd6e1e5d925bb4d7"
+      "version": "1439c621dc94016c504e1732ce8270081a42768f"
     },
     {
       "type": "git",
@@ -105,7 +105,7 @@
     {
       "type": "git",
       "path": "github.com/fatih/vim-go",
-      "version": "f5d34f40d6757470f40600000c9c08de142d7ced"
+      "version": "50d52bafa00448ca8cde2b0e05b0fe71c9397762"
     },
     {
       "type": "git",
