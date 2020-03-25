@@ -1,9 +1,6 @@
+" vim:et:sw=2:ts=2
+
 function! s:on_load_pre()
-	let g:go_highlight_functions=1
-	let g:go_highlight_methods=1
-	let g:go_highlight_structs=1
-	let g:go_fmt_command='goimports'
-	let g:go_def_mode='gopls'
 endfunction
 
 function! s:on_load_post()

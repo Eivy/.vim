@@ -104,11 +104,6 @@
     },
     {
       "type": "git",
-      "path": "github.com/fatih/vim-go",
-      "version": "50d52bafa00448ca8cde2b0e05b0fe71c9397762"
-    },
-    {
-      "type": "git",
       "path": "github.com/haya14busa/vim-migemo",
       "version": "9c83047985c3c141fef55a38ee525ff7ab4ed415"
     },
@@ -181,6 +176,11 @@
       "type": "git",
       "path": "github.com/mattn/emmet-vim",
       "version": "c7643e5b616430f766528b225528a5228adb43df"
+    },
+    {
+      "type": "git",
+      "path": "github.com/mattn/vim-goimports",
+      "version": "49bb53273fd787879858da170401d749e18317ab"
     },
     {
       "type": "git",
@@ -312,7 +312,6 @@
         "github.com/dart-lang/dart-vim-plugin",
         "github.com/editorconfig/editorconfig-vim",
         "github.com/emonkak/vim-metarw-gist",
-        "github.com/fatih/vim-go",
         "github.com/haya14busa/vim-migemo",
         "github.com/hotwatermorning/auto-git-diff",
         "github.com/itchyny/lightline.vim",
@@ -328,6 +327,7 @@
         "github.com/lighttiger2505/deoplete-vim-lsp",
         "github.com/majutsushi/tagbar",
         "github.com/mattn/emmet-vim",
+        "github.com/mattn/vim-goimports",
         "github.com/mattn/webapi-vim",
         "github.com/mechatroner/rainbow_csv",
         "github.com/posva/vim-vue",

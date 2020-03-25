@@ -1,7 +1,7 @@
 " vim:et:sw=2:ts=2
 
 function! s:on_load_pre()
-  let g:lsp_diagnostics_enabled=0
+  let g:lsp_diagnostics_echo_cursor = 1
   if executable('gopls')
     au User lsp_setup call lsp#register_server({
           \ 'name': 'gopls',
@@ -57,6 +57,8 @@ function! s:on_load_pre()
     nnoremap <silent> <buffer> ggS :<C-u>LspWorkspaceSymbol<CR>
     nnoremap <silent> <buffer> ggQ :<C-u>LspDocumentFormat<CR>
     vnoremap <silent> <buffer> ggQ :LspDocumentRangeFormat<CR>
+    nnoremap <silent> <buffer> <C-j> :<C-u>LspNextDiagnostic<CR>
+    nnoremap <silent> <buffer> <C-k> :<C-u>LspPreviousDiagnostic<CR>
     nnoremap <silent> <buffer> K :<C-u>LspHover<CR>
     nnoremap <silent> <buffer> <F1> :<C-u>LspImplementation<CR>
     nnoremap <silent> <buffer> <F2> :<C-u>LspRename<CR>
