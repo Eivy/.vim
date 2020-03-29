@@ -55,12 +55,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/denite.nvim",
-      "version": "cf4e54d36589726c4044ed2fae8557e9502bfea8"
+      "version": "c260893153a6e1378e66ef306c2cb54803447390"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/deoplete.nvim",
-      "version": "a76d2fbfdc4bf94dbf98d4f75a4aadb636e33784"
+      "version": "2258b116e81ab308495f94c81077682c39c32280"
     },
     {
       "type": "git",
@@ -70,12 +70,12 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet",
-      "version": "73e77a303ff9c32a06ee91637e3c3d25a90c7071"
+      "version": "3c84bf6969df5b0ee7c53d62313dd3fa2cfb3622"
     },
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet-snippets",
-      "version": "aed6074642363d0c97da5cd86e1b23027479df84"
+      "version": "2e72985f712f0d5cb707beba151555a1f0003630"
     },
     {
       "type": "git",
@@ -190,7 +190,7 @@
     {
       "type": "git",
       "path": "github.com/mechatroner/rainbow_csv",
-      "version": "4b1d1bb775536f4402486b2b90c6fecdc6dc743f"
+      "version": "558094da3fed012b4c81a59ec4d3d4125c7299dd"
     },
     {
       "type": "git",
