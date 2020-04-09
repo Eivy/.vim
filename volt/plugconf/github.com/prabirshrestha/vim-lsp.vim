@@ -15,6 +15,7 @@ function! s:on_load_pre()
           \   'completeDocumentation': v:true,
           \   'watchFileChanges': v:true,
           \   'hoverKind': 'SingleLine',
+          \   'usePlaceholders': v:true,
           \ }},
           \ })
     autocmd FileType go call s:configure_lsp()
