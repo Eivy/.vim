@@ -55,8 +55,8 @@ function! s:on_load_pre()
     nnoremap <silent> <buffer> ggD :<C-u>LspReferences<CR>
     nnoremap <silent> <buffer> ggs :<C-u>LspDocumentSymbol<CR>
     nnoremap <silent> <buffer> ggS :<C-u>LspWorkspaceSymbol<CR>
-    nnoremap <silent> <buffer> ggQ :<C-u>LspDocumentFormat<CR>
-    vnoremap <silent> <buffer> ggQ :LspDocumentRangeFormat<CR>
+    nnoremap <silent> <buffer> == :<C-u>LspDocumentFormat<CR>
+    vnoremap <silent> <buffer> == :LspDocumentRangeFormat<CR>
     map <silent> <buffer> <C-j> <plug>(lsp-next-diagnostic-nowrap)
     map <silent> <buffer> <C-k> <plug>(lsp-previous-diagnostic-nowrap)
     nnoremap <silent> <buffer> K :<C-u>LspHover<CR>
