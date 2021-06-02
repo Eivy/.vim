@@ -35,17 +35,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/context_filetype.vim",
-      "version": "cf25d744ac35872364c49fac3cb6a546e8af92ce"
-    },
-    {
-      "type": "git",
-      "path": "github.com/Shougo/defx.nvim",
-      "version": "ac40f5170ba097efec0f9055c92fe95e20ee2a7e"
-    },
-    {
-      "type": "git",
-      "path": "github.com/Shougo/denite.nvim",
-      "version": "7d54f44e1035aea4cba99bdb34f0565b55008706"
+      "version": "7f8c2f1340d450951462778b412e3b18038b4e82"
     },
     {
       "type": "git",
@@ -65,7 +55,7 @@
     {
       "type": "git",
       "path": "github.com/Shougo/neosnippet-snippets",
-      "version": "b7ba77a4eb39a95ffbb6b3ff0c3c43746441b2aa"
+      "version": "1315d10e60bd93483aaac4cc5a1623d13aede504"
     },
     {
       "type": "git",
@@ -75,12 +65,12 @@
     {
       "type": "git",
       "path": "github.com/dart-lang/dart-vim-plugin",
-      "version": "378bddc9f0e109607935ab9a4ac717df008deac7"
+      "version": "d874c13dca7300178546de62e1aff7d4812640c7"
     },
     {
       "type": "git",
       "path": "github.com/editorconfig/editorconfig-vim",
-      "version": "0a3c1d8082e38a5ebadcba7bb3a608d88a9ff044"
+      "version": "f305bc77faef4b418aee65682d7d147f64cfd5a9"
     },
     {
       "type": "git",
@@ -100,7 +90,7 @@
     {
       "type": "git",
       "path": "github.com/itchyny/lightline.vim",
-      "version": "f5f870e0ac67542fd83cb6ff99632940fe8795f9"
+      "version": "b06d921023cf6536bcbee5754071d122296e8942"
     },
     {
       "type": "git",
@@ -125,57 +115,62 @@
     {
       "type": "git",
       "path": "github.com/keith/swift.vim",
-      "version": "bfc662d11b3a006815d0b6972c1c0c2ebbc3b16e"
+      "version": "7ef452b47f14a2bfed26324793777cf12d2a8d78"
     },
     {
       "type": "git",
       "path": "github.com/kristijanhusak/defx-git",
-      "version": "717b30addcd5204cf11c0736792c4b7c45005b88"
+      "version": "324552fc652ed09e14a45485945b2e52eb04cbdc"
     },
     {
       "type": "git",
       "path": "github.com/kristijanhusak/defx-icons",
-      "version": "3259550f918b2cfb9794b62e7bb94b863f75f489"
+      "version": "563bc2d07d6c369a293ea8cb2fad8afd38bf4a02"
+    },
+    {
+      "type": "git",
+      "path": "github.com/lambdalisue/fern.vim",
+      "version": "5fe781e4a12101871bc778b977ce6b76685c1ab0"
     },
     {
       "type": "git",
       "path": "github.com/lambdalisue/vim-gista",
-      "version": "af13c0062a46d73384f15abee5a54e164fcaad8e"
+      "version": "c046de1b9d4cf97ff6f80cf3bdbb75b1094f2aaf"
     },
     {
       "type": "git",
       "path": "github.com/leafgarland/typescript-vim",
-      "version": "9f247d7693cd12171239c56c355ba863f559f424"
-    },
-    {
-      "type": "git",
-      "path": "github.com/lighttiger2505/deoplete-vim-lsp",
-      "version": "2ea06074dc07c67ccffc24b976b92e17e9d795d1"
+      "version": "67e81e4292186889a1a519e1bf3a600d671237eb"
     },
     {
       "type": "git",
       "path": "github.com/majutsushi/tagbar",
-      "version": "30fb229937d640889448de9c4f8b71b19946c67b"
+      "version": "225e6530c2b083e37744b23bac74ae40d7639d68"
     },
     {
       "type": "git",
       "path": "github.com/mattn/emmet-vim",
-      "version": "dc6cb4fd074f4c371158eeab0c8e4ce4af33534b"
+      "version": "46e60676f2d6b6f02478e444ae23ee804a3de45e"
     },
     {
       "type": "git",
       "path": "github.com/mattn/vim-goimports",
-      "version": "d42f3951232ada2b14c6356d4e60399a63ade96f"
+      "version": "cc0eab9ffa055718425d39911c300e8290b7c704"
+    },
+    {
+      "type": "git",
+      "path": "github.com/mattn/vim-lsp-settings",
+      "version": "33e31750a962974b63feef3b3ef1bdc6a321128d"
     },
     {
       "type": "git",
       "path": "github.com/mattn/webapi-vim",
-      "version": "10b8e926d85a3ab689c2966a3df1139bcb4e197f"
+      "version": "6f5ffb6f547cda1b6cbc26a06f12d81e6283bd82"
     },
     {
       "type": "git",
       "path": "github.com/mechatroner/rainbow_csv",
-      "version": "f173b8f114e6b957775cd201d568cadf391a1892"
+      "version": "7e315d46924a359cd50b6ddb00d5bc91c15b5bc9"
     },
     {
       "type": "git",
@@ -185,17 +180,27 @@
     {
       "type": "git",
       "path": "github.com/prabirshrestha/async.vim",
-      "version": "6102020b4690f05ab6509a37fa25bc53e2d799a9"
+      "version": "0fb846e1eb3c2bf04d52a57f41088afb3395212e"
+    },
+    {
+      "type": "git",
+      "path": "github.com/prabirshrestha/asyncomplete-lsp.vim",
+      "version": "684c34453db9dcbed5dbf4769aaa6521530a23e0"
+    },
+    {
+      "type": "git",
+      "path": "github.com/prabirshrestha/asyncomplete.vim",
+      "version": "6c653c3f8f1c1cf7a34522c9555d5160f36d29ee"
     },
     {
       "type": "git",
       "path": "github.com/prabirshrestha/vim-lsp",
-      "version": "46330cd0cbab3780b59a53c16fde6273bb217071"
+      "version": "541ed984b17bb603fbac6680be83451a98d4c025"
     },
     {
       "type": "git",
       "path": "github.com/rhysd/vim-gfm-syntax",
-      "version": "c0ff9e4994d4e79c8d5edf963094518dceea2623"
+      "version": "45f64700f3fc1c41722a147fb53a3ade4f431866"
     },
     {
       "type": "git",
@@ -205,27 +210,27 @@
     {
       "type": "git",
       "path": "github.com/roxma/vim-hug-neovim-rpc",
-      "version": "0b700099e567964bad1f3d17fe16035052b5129a"
+      "version": "93ae38792bc197c3bdffa2716ae493c67a5e7957"
     },
     {
       "type": "git",
       "path": "github.com/ryanoasis/vim-devicons",
-      "version": "7d1c3aeb3b26c7fb7bcd7cb2bee67beb3e538db3"
+      "version": "4c2df59e37b6680e0ec17b543b11a405dc40262c"
     },
     {
       "type": "git",
       "path": "github.com/t9md/vim-choosewin",
-      "version": "f91cdb9be92ce3bb9bccba16e8c659d5e8d7454f"
+      "version": "839da609d9b811370216bdd9d4512ec2d0ac8644"
     },
     {
       "type": "git",
       "path": "github.com/thinca/vim-quickrun",
-      "version": "c688f336a4aeb002319994f4fb4a8873f204f0ab"
+      "version": "759c9dd42d02c8634a044af998fd895682a0ce75"
     },
     {
       "type": "git",
       "path": "github.com/tpope/vim-fugitive",
-      "version": "511d3035d4da2453a9cb0188b6020ed7bc8fc18f"
+      "version": "10ed70a9c23cdd1748444e89e4928282e510451d"
     },
     {
       "type": "git",
@@ -240,7 +245,7 @@
     {
       "type": "git",
       "path": "github.com/tyru/caw.vim",
-      "version": "0725e7c273e2c39d8730adc78e0fd20e0d57d173"
+      "version": "42637427b1760f3f3006fafe95fb3e25fedca07b"
     },
     {
       "type": "git",
@@ -250,12 +255,12 @@
     {
       "type": "git",
       "path": "github.com/udalov/kotlin-vim",
-      "version": "26970168ca88c62b271fbc0a275dbe31cda94bd6"
+      "version": "e043f6a2ddcb0611e4afcb1871260a520e475c74"
     },
     {
       "type": "git",
       "path": "github.com/w0rp/ale",
-      "version": "08295ce17405cb5f6c80d2f726262493bfd21210"
+      "version": "1b08791228f5aca4545a3fba6699b29a003028fe"
     },
     {
       "type": "git",
@@ -274,9 +279,6 @@
         "github.com/Eivy/vim-metarw-simplenote",
         "github.com/Rip-Rip/clang_complete",
         "github.com/Shougo/context_filetype.vim",
-        "github.com/Shougo/defx.nvim",
-        "github.com/Shougo/denite.nvim",
-        "github.com/Shougo/deoplete.nvim",
         "github.com/Shougo/neomru.vim",
         "github.com/Shougo/neosnippet",
         "github.com/Shougo/neosnippet-snippets",
@@ -294,16 +296,19 @@
         "github.com/keith/swift.vim",
         "github.com/kristijanhusak/defx-git",
         "github.com/kristijanhusak/defx-icons",
+        "github.com/lambdalisue/fern.vim",
         "github.com/lambdalisue/vim-gista",
         "github.com/leafgarland/typescript-vim",
-        "github.com/lighttiger2505/deoplete-vim-lsp",
         "github.com/majutsushi/tagbar",
         "github.com/mattn/emmet-vim",
         "github.com/mattn/vim-goimports",
+        "github.com/mattn/vim-lsp-settings",
         "github.com/mattn/webapi-vim",
         "github.com/mechatroner/rainbow_csv",
         "github.com/posva/vim-vue",
         "github.com/prabirshrestha/async.vim",
+        "github.com/prabirshrestha/asyncomplete-lsp.vim",
+        "github.com/prabirshrestha/asyncomplete.vim",
         "github.com/prabirshrestha/vim-lsp",
         "github.com/rhysd/vim-gfm-syntax",
         "github.com/roxma/nvim-yarp",
