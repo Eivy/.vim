@@ -17,7 +17,6 @@ function! s:on_load_pre()
           \   'hoverKind': 'SingleLine',
           \ }},
           \ })
-    autocmd FileType go call s:configure_lsp()
   endif
   if executable('dart_language_server')
     augroup LSPDart
@@ -27,7 +26,6 @@ function! s:on_load_pre()
             \ 'cmd': {server_info->[&shell, &shellcmdflag, 'dart_language_server']},
             \ 'whitelist': ['dart'],
             \ })
-      autocmd FileType dart call s:configure_lsp()
       augroup LSP
         autocmd BufWritePre * silent LspDocumentFormatSync
       augroup END
@@ -39,33 +37,36 @@ function! s:on_load_pre()
             \ 'name': 'typescript-language-server',
             \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
             \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
-            \ 'whitelist': ['typescript'],
+            \ 'whitelist': ['typescript', 'vue'],
             \ })
-      autocmd FileType typescript call s:configure_lsp()
       augroup LSP
         autocmd BufWritePre * silent LspDocumentFormatSync
       augroup END
     augroup END
   endif
-  function! s:configure_lsp() abort
-    setlocal omnifunc=lsp#complete   " オムニ補完を有効化
-    " LSP用にマッピング
-    nnoremap <silent> <buffer> <C-]> :<C-u>LspDefinition<CR>
-    nnoremap <silent> <buffer> ggd :<C-u>LspDefinition<CR>
-    nnoremap <silent> <buffer> ggD :<C-u>LspReferences<CR>
-    nnoremap <silent> <buffer> ggs :<C-u>LspDocumentSymbol<CR>
-    nnoremap <silent> <buffer> ggS :<C-u>LspWorkspaceSymbol<CR>
-    nnoremap <silent> <buffer> == :<C-u>LspDocumentFormat<CR>
-    vnoremap <silent> <buffer> == :LspDocumentRangeFormat<CR>
-    map <silent> <buffer> <C-j> <plug>(lsp-next-diagnostic-nowrap)
-    map <silent> <buffer> <C-k> <plug>(lsp-previous-diagnostic-nowrap)
-    nnoremap <silent> <buffer> K :<C-u>LspHover<CR>
-    nnoremap <silent> <buffer> <F1> :<C-u>LspImplementation<CR>
-    nnoremap <silent> <buffer> <F2> :<C-u>LspRename<CR>
-  endfunction
 endfunction
 
 function! s:on_load_post()
+  function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete   " オムニ補完を有効化
+    " LSP用にマッピング
+    nmap <silent> <buffer> <C-]> <plug>(lsp-definition)
+    nmap <silent> <buffer> ggd <plug>(lsp-peek-definition)
+    nmap <silent> <buffer> ggD <plug>(lsp-references)
+    nmap <silent> <buffer> ggs <plug>(lsp-document-symbol-search)
+    nmap <silent> <buffer> ggS <plug>(lsp-workspace-symbol-search)
+    nmap <silent> <buffer> == <plug>(lsp-document-format)
+    vmap <silent> <buffer> == <plug>(lsp-document-range-format)
+    nmap <silent> <buffer> <C-j> <plug>(lsp-next-diagnostic-nowrap)
+    nmap <silent> <buffer> <C-k> <plug>(lsp-previous-diagnostic-nowrap)
+    nmap <silent> <buffer> K <plug>(lsp-hover)
+    nmap <silent> <buffer> <F1> <plug>(lsp-implementation)
+    nmap <silent> <buffer> <F2> <plug>(lsp-rename)
+  endfunction
+  augroup lsp_install
+    au!
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+  augroup END
 endfunction
 
 function! s:loaded_on()
