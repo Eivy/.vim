@@ -325,15 +325,23 @@ if executable('gopls')
 				\ 'cmd': {server_info->['gopls', '-mode', 'stdio']},
 				\ 'whitelist': ['go'],
 				\ 'workspace_config' : {'gopls': {
+					\   'analyses': { 'fillstruct': v:true },
 					\   'staticcheck': v:true,
 					\   'completeUnimported': v:true,
 					\   'caseSensitiveCompletion': v:true,
 					\   'usePlaceholders': v:true,
 					\   'completeDocumentation': v:true,
 					\   'watchFileChanges': v:true,
-					\   'hoverKind': 'SingleLine',
-					\ }},
-					\ })
+					\   'hoverKind': 'SynopsisDocumentation',
+					\   'codelens': {
+						\   'gc_details': v:false,
+						\   'generate': v:true,
+						\   'test': v:true,
+						\   'tidy': v:true,
+						\   'vendor': v:false,
+						\ },
+				\ }},
+	\ })
 endif
 function! s:on_lsp_buffer_enabled() abort
 	setlocal omnifunc=lsp#complete   " オムニ補完を有効化
