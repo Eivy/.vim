@@ -335,32 +335,6 @@ if executable('gopls')
 					\ }},
 					\ })
 endif
-if executable('dart_language_server')
-	augroup LSPDart
-		au!
-		au User lsp_setup call lsp#register_server({
-					\ 'name': 'dart_language_server',
-					\ 'cmd': {server_info->[&shell, &shellcmdflag, 'dart_language_server']},
-					\ 'whitelist': ['dart'],
-					\ })
-		augroup LSP
-			autocmd BufWritePre * silent LspDocumentFormatSync
-		augroup END
-	augroup END
-endif
-if executable('typescript-language-server')
-	augroup LSPTypescript
-		au User lsp_setup call lsp#register_server({
-					\ 'name': 'typescript-language-server',
-					\ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-					\ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
-					\ 'whitelist': ['typescript', 'vue'],
-					\ })
-		augroup LSP
-			autocmd BufWritePre * silent LspDocumentFormatSync
-		augroup END
-	augroup END
-endif
 function! s:on_lsp_buffer_enabled() abort
 	setlocal omnifunc=lsp#complete   " オムニ補完を有効化
 	" LSP用にマッピング
@@ -368,6 +342,9 @@ function! s:on_lsp_buffer_enabled() abort
 	nmap <silent> <buffer> ggd <plug>(lsp-peek-definition)
 	nmap <silent> <buffer> ggD <plug>(lsp-references)
 	nmap <silent> <buffer> ggs <plug>(lsp-document-symbol-search)
+	nmap <silent> <buffer> ggS <plug>(lsp-workspace-symbol-search)
+	nmap <silent> <buffer> gga <plug>(lsp-code-action)
+	nmap <silent> <buffer> ggc <plug>(lsp-code-lens)
 	nmap <silent> <buffer> ggS <plug>(lsp-workspace-symbol-search)
 	nmap <silent> <buffer> == <plug>(lsp-document-format)
 	vmap <silent> <buffer> == <plug>(lsp-document-range-format)
