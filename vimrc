@@ -385,3 +385,6 @@ augroup lsp_install
 	au!
 	autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+
+"molder
+let g:molder_show_hidden = 1
