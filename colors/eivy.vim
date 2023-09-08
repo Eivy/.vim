@@ -273,6 +273,9 @@ if has("gui_running") || &t_Co == 256
 	call <SID>X("Todo", "ffff00", "000000", "")
 	call <SID>X("Error", "ff0000", "000000", "")
 
+	call <SID>X("ALEError", "000000", "ff0000", "")
+	call <SID>X("ALEStyleError", "000000", "ff0000", "")
+
 	call <SID>X("Title", "79a9c8", "", "bold")
 
 	" delete functions {{{
@@ -333,6 +336,8 @@ else
 	hi Underlined ctermfg=cyan
 	hi Todo ctermfg=yellow
 	hi Error ctermfg=red
+	hi ALEError ctermfg=red
+	hi ALEStyleError ctermfg=red
 
 	hi Title ctermfg=cyan cterm=bold
 endif
