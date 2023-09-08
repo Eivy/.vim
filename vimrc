@@ -285,6 +285,7 @@ let g:quickrun_config['objc']={'exec': ['clang -framework cocoa %s -o %s:p:r','%
 let g:quickrun_config['html']={'command': 'cat', 'outputter': 'browser'}
 let g:quickrun_config['xhtml']=g:quickrun_config.html
 let g:quickrun_config['sql']={'command': 'mssql', 'cmdopt': '-c ~/.config/mssql'}
+nmap <silent> <leader>r <Plug>(quickrun)
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
 
 "Caw
